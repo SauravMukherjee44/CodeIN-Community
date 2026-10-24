@@ -49,9 +49,18 @@ Community milestones carry forward the figures published on the [original CodeIN
 
 The original program banners remain on the landing page, with their stories and recordings. These are past community programs.
 
-|          [100 Days of Code](https://codeincommunity.com/events/100-days-of-code)          |        [Winter Fest 2022](https://codeincommunity.com/events/winter-fest)        |          [Spark-a-thon](https://codeincommunity.com/events/spark-a-thon)           |
-| :---------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------: |
-| ![Original 100 Days of Code banner](apps/web/public/images/programs/100-days-of-code.png) | ![Original Winter Fest banner](apps/web/public/images/programs/winter-fest.webp) | ![Original Spark-a-thon banner](apps/web/public/images/programs/spark-a-thon.webp) |
+<table>
+  <tr>
+    <th width="33%"><a href="https://codeincommunity.com/events/100-days-of-code">100 Days of Code</a></th>
+    <th width="33%"><a href="https://codeincommunity.com/events/winter-fest">Winter Fest 2022</a></th>
+    <th width="33%"><a href="https://codeincommunity.com/events/spark-a-thon">Spark-a-thon</a></th>
+  </tr>
+  <tr>
+    <td align="center" valign="middle"><a href="https://codeincommunity.com/events/100-days-of-code"><img src="apps/web/public/images/programs/100-days-of-code.png" width="200" height="200" alt="Original 100 Days of Code banner" /></a></td>
+    <td align="center" valign="middle"><a href="https://codeincommunity.com/events/winter-fest"><img src="apps/web/public/images/programs/winter-fest.webp" width="200" height="200" alt="Original Winter Fest banner" /></a></td>
+    <td align="center" valign="middle"><a href="https://codeincommunity.com/events/spark-a-thon"><img src="apps/web/public/images/programs/spark-a-thon.webp" width="200" height="200" alt="Original Spark-a-thon banner" /></a></td>
+  </tr>
+</table>
 
 ## Tools for everyday development
 
@@ -62,8 +71,6 @@ All three developer utilities run locally in the browser. No accounts, uploads, 
 | [JSON formatter](https://codeincommunity.com/tools/json-formatter)       | Validate, pretty print, and minify JSON while preserving numeric literals, key order, and escape sequences. |
 | [Base64 converter](https://codeincommunity.com/tools/base64)             | Encode and decode UTF-8 text, including emoji and multilingual content.                                     |
 | [URL & query inspector](https://codeincommunity.com/tools/url-inspector) | Inspect URL components and repeated query keys, or encode and decode a component without visiting the URL.  |
-
-[![CodeIN developer workbench](docs/images/developer-tools.png)](https://codeincommunity.com/tools)
 
 Have an idea for another utility? [Submit your own tool](https://github.com/SauravMukherjee44/CodeIN-Community/issues/new?template=tool.yml). Describe the requirements in the guided GitHub form, publish the issue, and coordinate implementation with maintainers. GitHub sign-in is required; proposals are public.
 

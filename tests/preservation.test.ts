@@ -60,7 +60,6 @@ it("retains the original ancestry and the full dated repository history", async 
 it("keeps README screenshots, original partner badges, and all 150 contributor avatars available", async () => {
   for (const file of [
     "docs/images/website.png",
-    "docs/images/developer-tools.png",
     "docs/images/repository-history.svg",
     "apps/web/public/images/netlify-badge.svg",
   ])
