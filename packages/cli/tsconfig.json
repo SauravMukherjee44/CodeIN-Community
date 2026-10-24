@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "lib": ["ES2022", "DOM"],
+    "types": ["node"],
+    "paths": {
+      "@codein-community/toolkit": ["../toolkit/src/index.ts"],
+      "@codein-community/toolkit/github": ["../toolkit/src/github.ts"]
+    }
+  },
+  "include": ["src/**/*.ts"]
+}

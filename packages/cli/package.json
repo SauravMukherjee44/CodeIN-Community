@@ -1,0 +1,31 @@
+{
+  "name": "@codein-community/cli",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "CodeIN maintainer tools, on your terminal.",
+  "engines": {
+    "node": ">=24"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SauravMukherjee44/CodeIN-Community.git",
+    "directory": "packages/cli"
+  },
+  "bin": {
+    "codein": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "@codein-community/toolkit": "workspace:*"
+  }
+}

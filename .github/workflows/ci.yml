@@ -1,0 +1,37 @@
+name: Community CI
+on:
+  push:
+    branches: [main, "codex/**"]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm typecheck
+      - run: pnpm lint
+      - run: pnpm test
+      - run: pnpm build
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm test:e2e
+        env:
+          CI: "true"
+      - run: pnpm pack:release
+      - run: node scripts/smoke-package.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: community-evidence
+          path: |
+            artifacts/
+            playwright-report/
+            test-results/

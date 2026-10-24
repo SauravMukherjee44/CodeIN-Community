@@ -1,0 +1,10 @@
+[build]
+command = "pnpm build"
+publish = "apps/web/.next"
+[build.environment]
+NODE_VERSION = "24"
+PNPM_VERSION = "11.25.0"
+NETLIFY_NEXT_PLUGIN_SKIP = "false"
+[[plugins]]
+package = "@netlify/plugin-nextjs"
+

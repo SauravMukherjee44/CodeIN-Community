@@ -1,0 +1,19 @@
+name: Bug report
+description: Report a reproducible problem in the website, toolkit, or CLI
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and affected component
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce and expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Browser or Node.js version and operating system

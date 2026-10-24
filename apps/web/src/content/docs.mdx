@@ -1,0 +1,63 @@
+## One toolkit. Three ways to build.
+
+Use the browser tools immediately, run the CLI locally, or import the portable TypeScript library into your own project. All three interfaces use the same core engines.
+
+### Install the CLI
+
+Download `codein-community-cli-0.1.0.tgz` from [GitHub Releases](https://github.com/SauravMukherjee44/CodeIN-Community/releases). Node.js 24 or newer is required.
+
+```sh
+npm install -g ./codein-community-cli-0.1.0.tgz
+codein --help
+codein audit ./my-project --format json
+codein credits octocat/Hello-World --format markdown
+codein templates --repo owner/repo --out ./contribution-kit
+```
+
+For the latest source checkout, run `pnpm install`, `pnpm build`, and then `node packages/cli/dist/index.js --help`.
+
+### Repository readiness
+
+The auditor checks for nine pieces of contributor-facing setup: README, license, CONTRIBUTING, code of conduct, security policy, issue templates, PR templates, CI, and tests. A **present** finding records the matching paths. A **missing** finding means no matching evidence was found in a complete snapshot. **Unknown** means the source could not provide a complete inventory.
+
+File presence is only an initial signal. Read each document and inspect the tests and workflows to decide whether they meet your project’s needs. The tool does not execute repository code.
+
+Audit exit codes are `0` for all checks present, `1` for missing or unknown findings, and `2` for invalid input or execution errors. Local scans skip generated directories, symbolic links, and the CodeIN legacy archive. GitHub scans use the public repository’s default branch.
+
+### Contribution templates
+
+Review the generated guidance before committing it. The builder generates `CONTRIBUTING.md`, a pull request template, and bug/feature issue forms. Enter commands appropriate to your project; the prefilled pnpm commands are editable examples. CLI output requires an explicit destination directory. Existing files are preserved unless you pass `--overwrite`; symbolic links inside the destination are refused.
+
+### Contributor credits
+
+GitHub contributors are fetched in pages of 100 and deduplicated by stable GitHub ID. Sort by contributions or username, and choose whether to include bots. Counts reflect GitHub’s contribution records. A partial response is always labelled and the CLI exits with code `1`; it must not be presented as a complete acknowledgement.
+
+### TypeScript library
+
+Install `codein-community-toolkit-0.1.0.tgz` from the same release. ESM and TypeScript declarations are included.
+
+```ts
+import {
+  auditRepository,
+  generateContributionFiles,
+  createCredits,
+  creditsMarkdown,
+} from "@codein-community/toolkit";
+
+const report = auditRepository({
+  repository: "my-project",
+  files: ["README.md", "LICENSE", "tests/example.test.ts"],
+});
+```
+
+The core library consumes plain data and has no React, filesystem, or network dependency. The optional `@codein-community/toolkit/github` entry point provides read-only public GitHub adapters with injectable fetch functions for tests.
+
+### Network behavior and privacy
+
+The website sends repository identifiers to its read-only GitHub route. Successful responses are cached for one hour; a last-known-good response may be served for up to a day if GitHub fails, with a visible cached-result notice. Tokens, if configured by the operator, stay server-side. The CLI uses `GITHUB_TOKEN` only if you supply it. No member account or OAuth authorization is needed.
+
+The contributor fetch has a safety ceiling of 50 pages. If GitHub fails after returning some pages, or the ceiling is reached, the result is marked partial. CodeIN’s contributor wall retains every identity in its pre-migration baseline even when refreshes fail.
+
+### Contribute to the toolkit
+
+Read [CONTRIBUTING](https://github.com/SauravMukherjee44/CodeIN-Community/blob/main/CONTRIBUTING.md). Each change should include a reproducible example and verification of the resulting behavior. The complete project, CLI, and library are MIT licensed.

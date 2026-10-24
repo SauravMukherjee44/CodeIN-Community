@@ -1,0 +1,34 @@
+{
+  "name": "@codein-community/toolkit",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "Portable, evidence-based tools for open-source maintainers.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SauravMukherjee44/CodeIN-Community.git",
+    "directory": "packages/toolkit"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./github": {
+      "types": "./dist/github.d.ts",
+      "import": "./dist/github.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts src/github.ts --format esm --dts --clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}

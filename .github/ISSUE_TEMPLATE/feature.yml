@@ -1,0 +1,19 @@
+name: Feature request
+description: Propose a focused community or toolkit improvement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Who encounters this problem?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior and acceptance criteria
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and scope

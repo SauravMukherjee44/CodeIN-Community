@@ -1,95 +1,85 @@
-# CodeIN Community Website
+# CodeIN Community
 
-<p align="center">
-  <a href="https://codeincommunity.com" target="_blank">
-    <img src="./assets/img/hack.jpg" alt="CodeIN Community" />
-  </a>
-</p>
+[![Community CI](https://github.com/SauravMukherjee44/CodeIN-Community/actions/workflows/ci.yml/badge.svg)](https://github.com/SauravMukherjee44/CodeIN-Community/actions/workflows/ci.yml)
 
-<p align="center"><strong>CodeIN Community</strong> is one of India’s growing open-source-driven tech communities, supporting 15,000+ developers through mentorship, events, and collaborative learning.</p>
+A community for developers to learn, contribute, and build together — with open-source tools that make repository maintenance easier.
 
-<p align="center">
-  <a href="https://codeincommunity.com" target="_blank">Website</a> •
-  <a href="https://discord.com/invite/sqFRzrj7f3" target="_blank">Discord</a> •
-  <a href="https://www.linkedin.com/company/codein-community/" target="_blank">LinkedIn</a>
-</p>
+[Website](https://codeincommunity.com) · [Tools](https://codeincommunity.com/tools) · [Documentation](https://codeincommunity.com/docs) · [Contributors](https://codeincommunity.com/contributors) · [Our history](https://codeincommunity.com/heritage)
 
-## Badges
+## What is here?
 
-<div align="center">
-  <a href="https://github.com/SauravMukherjee44/CodeIN-Community-Website"><img src="https://sloc.xyz/github/SauravMukherjee44/CodeIN-Community-Website" alt="LOC" /></a>
-  <a href="https://github.com/SauravMukherjee44/CodeIN-Community-Website"><img src="https://img.shields.io/github/stars/SauravMukherjee44/CodeIN-Community-Website" alt="Stars Badge" /></a>
-  <a href="https://github.com/SauravMukherjee44/CodeIN-Community-Website/network/members"><img src="https://img.shields.io/github/forks/SauravMukherjee44/CodeIN-Community-Website" alt="Forks Badge" /></a>
-  <a href="https://github.com/SauravMukherjee44/CodeIN-Community-Website/graphs/contributors"><img src="https://img.shields.io/github/contributors/SauravMukherjee44/CodeIN-Community-Website?color=2b9348" alt="Contributors Badge" /></a>
-  <a href="https://github.com/SauravMukherjee44/CodeIN-Community-Website/issues"><img src="https://img.shields.io/github/issues/SauravMukherjee44/CodeIN-Community-Website" alt="Issues Badge" /></a>
-  <a href="./LICENSE"><img src="https://img.shields.io/github/license/SauravMukherjee44/CodeIN-Community-Website" alt="License Badge" /></a>
-</div>
+| Workspace          | Purpose                                                                                  |
+| ------------------ | ---------------------------------------------------------------------------------------- |
+| `apps/web`         | Next.js App Router community website and interactive developer tools                     |
+| `packages/toolkit` | Framework-independent, typed ESM audit, template, and credits engines                    |
+| `packages/cli`     | Bundled `codein` command-line interface                                                  |
+| `legacy/website`   | Complete original website, preserved with its assets, documentation, and license notices |
 
-<p align="center">
-  <a href="https://www.netlify.com" target="_blank">
-    <img src="https://www.netlify.com/assets/badges/netlify-badge-color-bg.svg" alt="Deploys by Netlify" />
-  </a>
-</p>
+The three tools are a Repository Readiness Auditor, Contribution Template Builder, and Contributor Credits Generator. The website supports public GitHub repositories; the auditor CLI also supports local directories. File presence checks are guidance, not certification of a repository's quality or security.
 
-## About The Community
+## Develop
 
-CodeIN Community is a collaborative open-source learning ecosystem where students and early-career developers build projects, contribute to real repositories, and grow with peer support.
+Use Node.js 24 and pnpm 11.25.0 (the version pinned in `packageManager`).
 
-What we focus on:
-- Open source programs and contribution drives
-- Hackathons and project-based learning
-- 1:1 and peer mentorship
-- Tech opportunities, roadmaps, and resources
+```sh
+corepack enable
+corepack prepare pnpm@11.25.0 --activate
+pnpm install --frozen-lockfile
+pnpm dev
+```
 
-## OSS x Netlify Open Source Partnership
+Open `http://127.0.0.1:3100`. No token is required. An optional server-only `CODEIN_GITHUB_TOKEN` improves the GitHub rate limit; never prefix it with `NEXT_PUBLIC_`. The CLI separately reads `GITHUB_TOKEN`. Only public repositories are accepted, even when a token can access private ones.
 
-CodeIN Community is proud to be one of the OSS (Open Source Software) partners for Netlify.
+```sh
+pnpm typecheck
+pnpm lint
+pnpm test
+pnpm build
+pnpm exec playwright install chromium
+pnpm test:e2e
+pnpm pack:release
+node scripts/smoke-package.mjs
+```
 
-As an open-source community partner, we use this website and our programs to:
-- Encourage first-time contributors to enter open source
-- Support community-built projects with modern web deployment workflows
-- Create inclusive pathways for contributors to learn by shipping real work
+Browser tests cover tool results and downloads, validation, themes, keyboard navigation, responsive layout, redirects, contributor fallback, and automated accessibility. Their GitHub fixtures make failures reproducible without an API token. Run against a deployed preview with `PLAYWRIGHT_BASE_URL=https://your-preview.netlify.app pnpm test:e2e`.
 
-This partnership reflects our mission: helping more developers discover, contribute to, and sustain open-source communities.
+## Use the CLI or library
 
-## Partnerships & Sponsorships
+Download the `.tgz` archives and `checksums.txt` from [GitHub Releases](https://github.com/SauravMukherjee44/CodeIN-Community/releases). npm publication is deferred.
 
-We welcome businesses, startups, and ecosystem partners who want to support open-source learning and community growth.
+```sh
+npm install -g ./codein-community-cli-0.1.0.tgz
+codein audit ./my-repo --format json
+codein templates --repo owner/repo --out ./contribution-kit
+codein credits owner/repo --format markdown --exclude-bots
+```
 
-Organizations can support CodeIN Community through:
-- Sponsorships for community programs, hackathons, and contributor initiatives
-- Product or platform subscriptions for development, design, collaboration, and productivity
-- AI credits (LLM/API/cloud credits) to help contributors build and ship real projects
-- Event support, swag, learning resources, or mentorship collaborations
+The CLI is bundled and does not require an unpublished npm dependency. Audit exits: **0** all checks present, **1** missing/unknown findings, **2** execution or input error. Credits exit **1** for a partial list; do not treat it as complete. Templates refuse to replace existing files without `--overwrite`.
 
-If your organization would like to partner with us, collaborate, or sponsor our initiatives, reach out to us at:
-- Email: [codeincommunity@gmail.com](mailto:codeincommunity@gmail.com)
+```ts
+import {
+  auditRepository,
+  generateContributionFiles,
+  createCredits,
+} from "@codein-community/toolkit";
+import {
+  fetchRepository,
+  fetchContributors,
+} from "@codein-community/toolkit/github";
 
-## Contributing
+const report = auditRepository(await fetchRepository("owner/repo"));
+```
 
-Contributions are welcome and appreciated.
+See the [toolkit README](packages/toolkit/README.md), [CLI README](packages/cli/README.md), and [online documentation](https://codeincommunity.com/docs) for interfaces and limitations.
 
-1. Fork the repository.
-2. Clone your fork.
-3. Create a feature branch.
-4. Make your changes.
-5. Commit and push.
-6. Open a pull request.
+## History and credit
 
-For full contribution workflow and standards, read:
-- [Contributing Guide](./CONTRIBUTING.md)
-- [Code of Conduct](./CODE_OF_CONDUCT.md)
+This is the same repository and Git history as CodeIN-Community-Website. The original 406 tracked files are preserved under `legacy/website`, with SHA-256 hashes in `legacy/manifest.json` and the original commit tagged `legacy-website-2026-10-24`. Run `node scripts/verify-legacy.mjs` to verify the archive. Legacy scripts and dependencies are excluded from the modern workspaces and deployment.
 
-## Contributors
+All 150 GitHub contributor identities captured across both API pages are retained in `apps/web/src/data/contributors.json`. Successful complete refreshes can add or update identities by stable GitHub ID; outages and partial responses cannot erase the baseline. Historical volunteer roles are recorded separately in `historical-team.json` and are not presented as current maintainer appointments. Thank you to everyone who built CodeIN.
 
-<p align="center">
-  <a href="https://github.com/SauravMukherjee44/CodeIN-Community-Website/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=SauravMukherjee44/CodeIN-Community-Website" alt="Contributors" />
-  </a>
-</p>
+## Contribute and deploy
 
-## License
+Read [CONTRIBUTING.md](CONTRIBUTING.md), [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md), and [SECURITY.md](SECURITY.md). The repository owner is [Saurav Mukherjee](https://github.com/SauravMukherjee44). See [deployment and rollback instructions](docs/DEPLOYMENT.md) before changing production. Netlify serves the Next.js application at the existing domain.
 
-This project is licensed under the [MIT License](./LICENSE).
-
-© 2026 CodeIN Community contributors.
+MIT licensed. Third-party notices remain alongside the original assets in the legacy archive.

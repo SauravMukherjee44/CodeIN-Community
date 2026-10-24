@@ -1,0 +1,35 @@
+{
+  "name": "codein-community",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "pnpm --filter @codein-community/web dev",
+    "build": "pnpm --filter @codein-community/toolkit build && pnpm --filter @codein-community/cli build && pnpm --filter @codein-community/web build",
+    "typecheck": "pnpm -r typecheck",
+    "lint": "eslint apps packages scripts tests && node scripts/verify-legacy.mjs",
+    "test": "vitest run && node scripts/verify-legacy.mjs",
+    "test:e2e": "playwright test",
+    "pack:release": "node scripts/package-release.mjs",
+    "pretest": "pnpm --filter @codein-community/toolkit build && pnpm --filter @codein-community/cli build"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.14.0",
+    "@eslint/js": "10.0.1",
+    "@netlify/plugin-nextjs": "5.16.4",
+    "@playwright/test": "1.64.1",
+    "@types/node": "24.19.2",
+    "eslint": "10.13.0",
+    "fflate": "0.8.2",
+    "netlify-cli": "27.14.2",
+    "prettier": "3.6.2",
+    "tsup": "8.5.1",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.72.0",
+    "vitest": "4.1.12"
+  },
+  "type": "module"
+}

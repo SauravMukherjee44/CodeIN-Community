@@ -1,0 +1,1630 @@
+{
+  "sourceCommit": "2e957ad7db868afbb793872cc3439edc5d1e3153",
+  "tag": "legacy-website-2026-10-24",
+  "files": [
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug.yaml",
+      "sha256": "2664d6362be4862625d4ac4a27208eb33df9bd1cae4b2df796c4c6d39203a7c1"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "sha256": "e9a81205f3a19d3493f412846adbb24d344ea96f675988ccdb1e2fcda021c7fc"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/doc_issue.yaml",
+      "sha256": "2ae35f43e91a0952ea24656decbc7490db7fda106f8d3c93260887a12c6ffd59"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+      "sha256": "6c0daae5c0798915c343a1662d929acc09d2637cd16ad7c530b043db75687448"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/other.yml",
+      "sha256": "ef01a5c80d26d12b0efc1dfcbb10527e51e5ef21d36a774e3ec5dc88a609ab40"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "sha256": "b7666713e692bcd5684374152a08caf05fb7d6e0cb6110574c0647f21f2ad7f2"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "b8d3b3f6a31c1ccb9e6dbb492e2a09cea77b904f1d42aa7c035ab4791be635d3"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "sha256": "40c039795b77faa395d48114c060d993df3c1d12eab302150d212917b52e7aae"
+    },
+    {
+      "path": "100daysofcode.html",
+      "sha256": "18237b67bc00dd1703d7184a9be52f50bc1c65aae9055b31189a8f3e95cfd1df"
+    },
+    {
+      "path": "404.css",
+      "sha256": "082c152b29db2b2216a09c87ff8dd91ca22f037718e94403e3f40f17347d5e3f"
+    },
+    {
+      "path": "404.html",
+      "sha256": "346000ceba41dba5ca8c9dfc808a29c04216bafa7d7c4b38e185d52d46a90c00"
+    },
+    {
+      "path": "CNAME",
+      "sha256": "2c9e5d4c012cb776d89202f3adc730f7b5590f07f89743401077943aed161ebb"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "sha256": "106e16c69776eac6269641eaf719ee3319815204c079a8eb08f041219db03e95"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "5e99a6ac7ace7deca92f688246452339537611b824a5cdd8f9d3f50dee75d032"
+    },
+    {
+      "path": "CSS/index.css",
+      "sha256": "8635d672134d51c4fa2dd6b3e35c0e1ea6f81b41de717ba7bf84c2e6524258ad"
+    },
+    {
+      "path": "CSS/styles.css",
+      "sha256": "8822dc93ded1998624735e3a8b4840614f1e9f7ec51d7bcd8cd75518862b6657"
+    },
+    {
+      "path": "JS/Counter1.js",
+      "sha256": "462f8e8b6e93f54e89f68885991d75b6523b4d531be84f7d6133bdf43720baf5"
+    },
+    {
+      "path": "JS/Tawk.js",
+      "sha256": "a9d8a81de6c57ad3f787b3b1d3d54926f0cad653ca7edd0cf880688a0d2a41ab"
+    },
+    {
+      "path": "JS/index.js",
+      "sha256": "8b891321de7334b8310d236bd8bb959241256e48ae395b3598b111798c86e2db"
+    },
+    {
+      "path": "JS/open-source-contributions.js",
+      "sha256": "17cec8c09073d383bc9be6b344d06f6bc1b83003baef610d735f191d344f91b6"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "6bf2d7e639220983c868e3ddd7abfee2a25bfab8581a19e694187a582ab421db"
+    },
+    {
+      "path": "Privacy Policy Page/policy.css",
+      "sha256": "a012a7f34fb2739590dee53514483c5872952d32aafeb71b5cd6d3a27000a973"
+    },
+    {
+      "path": "Privacy Policy Page/policy.html",
+      "sha256": "569a8c79ac8ad34f728313099ab9c921182ffdc99fcd9bca43438f0c8cc1b36a"
+    },
+    {
+      "path": "README.md",
+      "sha256": "7aa357d2de279fa498860a3e792a7f77f39b4f3d1804180b262564b960e63578"
+    },
+    {
+      "path": "assets/CodeIN-yellow.png",
+      "sha256": "432fca96afc172124940d2e8041144700feecdb9ff854b7c0c17aad746a98b58"
+    },
+    {
+      "path": "assets/CodeIN.jpg",
+      "sha256": "643480f1395446b4bab45438453f5e867f6e8c723c022ef1d5d1972e83691036"
+    },
+    {
+      "path": "assets/Library.png",
+      "sha256": "cfa760448103f4bde069ef1f8f7120f51422921c1ead9753a1cc55fe744898f0"
+    },
+    {
+      "path": "assets/course.jpg",
+      "sha256": "0e5379fa2056365b376e54a34167531b9c2bd36e04f8518732957615101c97e7"
+    },
+    {
+      "path": "assets/css/100daysofcode.css",
+      "sha256": "563fe1aec0e3f96abe9abdca59f64898233ebe2eb3d735427308062e1a8ce51d"
+    },
+    {
+      "path": "assets/css/animate.css",
+      "sha256": "59a1460df6cb458204ec993345ff4964fa7e1a77da4ab7137e50fce8434c1d6a"
+    },
+    {
+      "path": "assets/css/blog.css",
+      "sha256": "e99a5f90fe211097a3e93b9cf60f2d6257940eddb1a0e33e0c088193afb9e71b"
+    },
+    {
+      "path": "assets/css/bootstrap-grid.css",
+      "sha256": "7026b32c8b5a33e673e54133bbd1cdce581685796f9270b38dd138e4b05e4e7b"
+    },
+    {
+      "path": "assets/css/bootstrap-grid.css.map",
+      "sha256": "d8c8233b4ce9a9866c71ab50486589f48a3d53c123bd7934898ca0633d50f8cb"
+    },
+    {
+      "path": "assets/css/bootstrap-grid.min.css",
+      "sha256": "0fd02f47413390d668599552bc8ddc87eb9ffd9e62ceb22971bb32915a61c0f5"
+    },
+    {
+      "path": "assets/css/bootstrap-grid.min.css.map",
+      "sha256": "919ce55cba530b45af2f400bee75dfd3b049dbc5a763fd47fc7aca812ebc4382"
+    },
+    {
+      "path": "assets/css/bootstrap-reboot.css",
+      "sha256": "65af136a8018835073994f517bb162cba1e1dda7388ecc0f13530a793b3de5bc"
+    },
+    {
+      "path": "assets/css/bootstrap-reboot.css.map",
+      "sha256": "ddee9ac2a5cf8a3c7dd7c773cb36db1cac1a0c14ec210f14b37f10637d06466b"
+    },
+    {
+      "path": "assets/css/bootstrap-reboot.min.css",
+      "sha256": "740458b82de9774c1affb4781e4b7fb11db37cb1c281b9d5010dac3f084d7b40"
+    },
+    {
+      "path": "assets/css/bootstrap-reboot.min.css.map",
+      "sha256": "7489b75595f3b706c89613b356dfa0820e43be1a76f0c250189a3078e1fd7001"
+    },
+    {
+      "path": "assets/css/bootstrap.css",
+      "sha256": "35fbb6dc3891aacaf1ffa07abec2344fdbc454aab533a2a03bcf93577eb7837b"
+    },
+    {
+      "path": "assets/css/bootstrap.css.map",
+      "sha256": "08c0198f724aa19515612c553d2fc57866ad9984af1e4ba3a39a1a64b357c74a"
+    },
+    {
+      "path": "assets/css/bootstrap.min.css",
+      "sha256": "c5ce2e57b96e631d37c17a5aae998a6b12e676d2a34ab5e982d283383c8653b6"
+    },
+    {
+      "path": "assets/css/bootstrap.min.css.map",
+      "sha256": "c4c67449a48161948756315d653013fc88d1131448c52ae259c24b700f67923d"
+    },
+    {
+      "path": "assets/css/contactSection.css",
+      "sha256": "bef2ef1e64f942cfcaa2cf8f050e66d532f16bd1c97cc4514868ba714c46856d"
+    },
+    {
+      "path": "assets/css/darkmode.css",
+      "sha256": "95e2438814dff3ff68182f72e88f7e0e92b8675dfb6cdfb02ce580589009c485"
+    },
+    {
+      "path": "assets/css/hacktoberfest.css",
+      "sha256": "fb72a91cf74c6447bb88a98d8dbdb41f168476b506738cc1a63dfb116e08eb8a"
+    },
+    {
+      "path": "assets/css/magnific-popup.css",
+      "sha256": "45d1f5f6cf913746c45dd697b1a8f3b719c02d8b3f678dc7fc2766d54e1aaf6e"
+    },
+    {
+      "path": "assets/css/main.css",
+      "sha256": "8e08403ad91f22694ec61ec818218fe2bf177b094f7004e71e8ca5471ed75e98"
+    },
+    {
+      "path": "assets/css/nivo-lightbox.css",
+      "sha256": "1d5fdf7126b85a1ab559516a81960cf77fa21e782f56cc898526f0c7b64a12a6"
+    },
+    {
+      "path": "assets/css/oppurtunity.css",
+      "sha256": "c7cb59ca88746c32aa4acc8da1258987023e56ac810e1f09645e6b2f5a70fe14"
+    },
+    {
+      "path": "assets/css/owl.carousel.min.css",
+      "sha256": "0b7c58f0ed214de7592199bcbbd4e0c2cff04d2bcbdd0594c1ce0f1aa870485a"
+    },
+    {
+      "path": "assets/css/owl.theme.css",
+      "sha256": "3c029a448d3e0ba0823dc3e7c634d51fdd59f94f77855c4ce0b3872b07427f53"
+    },
+    {
+      "path": "assets/css/responsive.css",
+      "sha256": "de7f4d18835dcf752e4e73cc444c7664a7372206d5d5781e2eaf76750c255bfd"
+    },
+    {
+      "path": "assets/css/swipper.css",
+      "sha256": "4acef7a91092d1b4fdb689e8ad373087f074086000a366b1091ea74af3f913b4"
+    },
+    {
+      "path": "assets/fonts/LineIcons.eot",
+      "sha256": "8f6e574d7c333c7d357b416dce58e5db6bc53a05b92c9843cb7ecb98633bc311"
+    },
+    {
+      "path": "assets/fonts/LineIcons.svg",
+      "sha256": "185bce0eaa75bdf7348812bb2e346cacfd6a2baad54481f164dfe97dbd818333"
+    },
+    {
+      "path": "assets/fonts/LineIcons.ttf",
+      "sha256": "a29ccf578a290cfb7192db8bceefaf536481e21cdf23ca8d6829fe89022c84d2"
+    },
+    {
+      "path": "assets/fonts/LineIcons.woff",
+      "sha256": "cc479edb2d50efd3dd7a1b75108d3f6dfc7dd6885fcaa03e8b8a16d6918ad47a"
+    },
+    {
+      "path": "assets/fonts/line-icons.css",
+      "sha256": "80913dd60d4479cb92e092c9196b3ebd0149235af7b1b5ec07bd93abcce4f553"
+    },
+    {
+      "path": "assets/img/100daysofcode.png",
+      "sha256": "5f1f606f1925cb48bc76fc93888f50ab73941dbc5dbd8b5a1fd149485db1e8ba"
+    },
+    {
+      "path": "assets/img/Call_center-cuate.png",
+      "sha256": "6adfcbdfb1730f2b5182b08bdb37eb0dde97eea8999d291afddc93254da60114"
+    },
+    {
+      "path": "assets/img/CodeIN.png",
+      "sha256": "47df0e309d4a42caa01056859331a3328a742aa80b9ad6b1d0f24cbeb3f07b60"
+    },
+    {
+      "path": "assets/img/DEMO.png",
+      "sha256": "1ba479fd6bbafd8fa4fc3c17a1f437429d051be916a14ab9340ff03e24b99aee"
+    },
+    {
+      "path": "assets/img/Dreamwave-Photo (4).png",
+      "sha256": "29b8fef7a1249f3a189e9caaa3f64d1297a67842384c17d9b0ccbd170a2b139c"
+    },
+    {
+      "path": "assets/img/Event/event1-small.jpeg",
+      "sha256": "9ed4267d80c082d9549de01472db6d3b754efa57fdc385b2b6f8ae75384ef16b"
+    },
+    {
+      "path": "assets/img/Event/event1-small.webp",
+      "sha256": "77b0036b2d8b51d5e80d60ed2b5320e0dc3c3fd8a903274d535eae5804edec60"
+    },
+    {
+      "path": "assets/img/Event/event1.jpeg",
+      "sha256": "715363cbe8fb182472d3268496004001282d380d59d58fd08c130f2ddbe8c26f"
+    },
+    {
+      "path": "assets/img/Event/event2-small.png",
+      "sha256": "fc728fbe8ea4096bd4e987de3db65db80a6133c5a0671ffd00d1b0bdf188db41"
+    },
+    {
+      "path": "assets/img/Event/event2.png",
+      "sha256": "2e14a2e9c76a8cbd1d4a0baee3aac27d5b70c00825dca647a3967ff1e2eb186c"
+    },
+    {
+      "path": "assets/img/Event/event2.webp",
+      "sha256": "6e6f669b07744d206ccb6cf0d77f587dd5ce3e62be3493e0b970974edb060e91"
+    },
+    {
+      "path": "assets/img/Event/event3.png",
+      "sha256": "9d9005531d074023f8735e4814b0271a4610b67d00a25536ad7a8067e461b185"
+    },
+    {
+      "path": "assets/img/Event/event3.webp",
+      "sha256": "79f9dd5f7183c7f139a48e07dfccd1021085b03a5714c057fe9ee0edd1f09eef"
+    },
+    {
+      "path": "assets/img/Event/event4-small.jpeg",
+      "sha256": "ed108d73ed608ebc6798aad5cd7238f1dbe4d9f36b5d90d237325044ccdc2ffe"
+    },
+    {
+      "path": "assets/img/Event/event4-small.webp",
+      "sha256": "831d6e4ac9130ed24e3998c070412378ffd601bcec47386051b1fad436bc3fa3"
+    },
+    {
+      "path": "assets/img/Event/event4.jpeg",
+      "sha256": "95be4fd809b966565eac47a60a5fb7090ec39a15e66db9dc8741309df701941a"
+    },
+    {
+      "path": "assets/img/Marketing-pana.png",
+      "sha256": "16659a47c75424560729b95ef5a169af66177d842b13c5b3a39ee6fa85c41569"
+    },
+    {
+      "path": "assets/img/Partners/Algo-small.jpeg",
+      "sha256": "ab090af18d1575c9c2b51f2ec8545480f1cc92edad038ecbbc8da4ae71982cfd"
+    },
+    {
+      "path": "assets/img/Partners/Algo-small.webp",
+      "sha256": "c7a4a2f98a4a8d9fc91b0f152ee1039294220b45b25cf4876d4bbfd2f962da3d"
+    },
+    {
+      "path": "assets/img/Partners/Algo.jpeg",
+      "sha256": "a84252da1381da5b50c2ba56bbf24cc7137719ffd4ac0a983b5b8a89328e386c"
+    },
+    {
+      "path": "assets/img/Partners/Az-small.png",
+      "sha256": "803a1aad301335851118900cd1fdc04b175e8bf5419ea5c990a1191985fdefa4"
+    },
+    {
+      "path": "assets/img/Partners/Az-small.webp",
+      "sha256": "4d5534d3ec7684ddbaee17f31d7acce26b691ca21015b92cfa321023ee977c2b"
+    },
+    {
+      "path": "assets/img/Partners/Az.png",
+      "sha256": "3e4b41541e5d448f51eed21e07f24b4ba3fcbe7f4ad04e14acd93145b4ba8dbc"
+    },
+    {
+      "path": "assets/img/Partners/CODING_MINUTES_LOGO.GIF",
+      "sha256": "ff4672018e4a614f915dbd82eb92e9e826c9a73c348710db844f1ae023c8ca53"
+    },
+    {
+      "path": "assets/img/Partners/CodingMinutes Logo.png",
+      "sha256": "64fb5e9db2b20d9d7ba77e3b388793b7c979b25a573edd9f9acbe6363bbe03bf"
+    },
+    {
+      "path": "assets/img/Partners/DC_updated_Logo-small.png",
+      "sha256": "b2eca5a21ac9fc12b9d054cc993e6ecfb96d153995ea533bbb31251d08405fbd"
+    },
+    {
+      "path": "assets/img/Partners/DC_updated_Logo-small.webp",
+      "sha256": "9244e806677f671cd879b381b810074caf737e2bccae2f0647eda8c21e4ce8d0"
+    },
+    {
+      "path": "assets/img/Partners/DC_updated_Logo.png",
+      "sha256": "b35b86161103298462602b6743cf0fa2dfc94f933319c7dbb9a49015070aec44"
+    },
+    {
+      "path": "assets/img/Partners/GCCP.png",
+      "sha256": "4d7f9ecf34a3f2f3bea5147debf7d61ac7d704480a71c7d21385a4e6858564ee"
+    },
+    {
+      "path": "assets/img/Partners/GDSC_kalindi.jpg",
+      "sha256": "27b1545fc3a519bf2407785d99ffc3e660e34145295a81c8ce77a3843f2173f1"
+    },
+    {
+      "path": "assets/img/Partners/GDSC_kalindi.webp",
+      "sha256": "dd13820c974d0e424aa0085191245b2ace99c370d10a357998664f5cfb060fa0"
+    },
+    {
+      "path": "assets/img/Partners/GMC LogoS-small.png",
+      "sha256": "fa0c4d622c2c7922a18d67488cb3229bdcd88253d2c5b72efeddbf1d0b4fced6"
+    },
+    {
+      "path": "assets/img/Partners/GMC LogoS-small.webp",
+      "sha256": "8d0d6d79ae7f36a222b543c801b467ff374cfa2937d4f65b7afbc9e36458aa19"
+    },
+    {
+      "path": "assets/img/Partners/GMC LogoS.png",
+      "sha256": "4c53e7195e7112281a343846d287db93190a5634c7ab7b7c2d584dde541fb09c"
+    },
+    {
+      "path": "assets/img/Partners/Geeks.jpg",
+      "sha256": "b253b7befd53ef8c3ed421b69cef466e39237742d9505aba87569bcd5ff79ec8"
+    },
+    {
+      "path": "assets/img/Partners/Geeks.webp",
+      "sha256": "05b11c453be895f02fb082fcb731e1705539cc464b8ae5eea67bffaa578df30b"
+    },
+    {
+      "path": "assets/img/Partners/LWC.png",
+      "sha256": "8e2dd03a5fd296f6f8dfb2a8e28defca8cd126c10da4faa73801e4db64a45bea"
+    },
+    {
+      "path": "assets/img/Partners/LWC.webp",
+      "sha256": "ce8f0f1383e03fabd7bc702390a9e47a45a0d58d5e727b1c159ba0e28cf79475"
+    },
+    {
+      "path": "assets/img/Partners/LWM-small.png",
+      "sha256": "168664c5a5965aab2e253b8433506ddd889f77568e34de520b51a5ae3094a083"
+    },
+    {
+      "path": "assets/img/Partners/LWM-small.webp",
+      "sha256": "3e9914be1aa27eb992591e2a05a02a2b030a9a3754356f998bf0fddb057ac6ce"
+    },
+    {
+      "path": "assets/img/Partners/LWM.png",
+      "sha256": "290dc7733283a24f5dfa2794dd7c5f7eace464c4703afe5fd0be1113f9c4366b"
+    },
+    {
+      "path": "assets/img/Partners/Newton School.png",
+      "sha256": "304d636d32cce5525d6bca94ce5dc7d61c8ab0ab4e2f39162259cf5b2e9d6cf2"
+    },
+    {
+      "path": "assets/img/Partners/Sattva.jpg",
+      "sha256": "423c899ade0fb29ff76c5e6032485dad6a39e7ace0190a752f4f11d9bd32ac2c"
+    },
+    {
+      "path": "assets/img/Partners/Sattva.webp",
+      "sha256": "0a8d8b72408378b7ca194afa16561520084df83c32602031f23e5b22a5881993"
+    },
+    {
+      "path": "assets/img/Partners/Sudands.jpg",
+      "sha256": "ec74131a05bf172f3da4b13ce66bdf73ea34aad497fbbeb9810a5cbc1abc4440"
+    },
+    {
+      "path": "assets/img/Partners/Sudands.webp",
+      "sha256": "ca691f771b2a955c9a09e51639a5341cd2be513b966447d81899e5c3406933e4"
+    },
+    {
+      "path": "assets/img/Partners/download (5).png",
+      "sha256": "ef41421e2b81ee8104fdc861f28e44d04d598ce0ff0ba106320433773ee350c2"
+    },
+    {
+      "path": "assets/img/Partners/sos.jpg",
+      "sha256": "ae68de701910103983fc5ed81165f659adfd828f85016a77b233ae5fbebd50eb"
+    },
+    {
+      "path": "assets/img/Recruitment-Journey.png",
+      "sha256": "14b439a7893a945236a41c7ab8c69eccadbf9091d9c75d01cdbed9204c9a268e"
+    },
+    {
+      "path": "assets/img/TshirtWinIcon.png",
+      "sha256": "d71c16c02a1b9e217e0ab3fcbcb8c42b244d26fab7ae3ca3aa53c84c00c2b728"
+    },
+    {
+      "path": "assets/img/VoucherWinIcon.png",
+      "sha256": "a0e4b3c26b5ebcd190f5cc31d94f92837609b1f77c1a3ccf4fb64e1e8436e46c"
+    },
+    {
+      "path": "assets/img/about/Social biography-amico.png",
+      "sha256": "80351314de302010bc7617c4222d9fd0c232e9df8474868a2d12c6ad4a8e6886"
+    },
+    {
+      "path": "assets/img/about/img-1.png",
+      "sha256": "9cd7a77d4f84f67add3c86cd2d62b9f74ca4e1df3310de83de1f92510abb6fc1"
+    },
+    {
+      "path": "assets/img/about/img-1.webp",
+      "sha256": "49c473f1b46741b34aad68934a3deadc8bba45132573a823c80e677a13ebc7f0"
+    },
+    {
+      "path": "assets/img/about/img3.png",
+      "sha256": "f4fca851d0134dbb562fafaea144111faad1b2b8f0c81f647f6ed50b6680b20f"
+    },
+    {
+      "path": "assets/img/about/img4.svg",
+      "sha256": "2232c9eb5e1976df333c8f4a33d5e8923f5d0a041dde5aeeaf11b10084df1572"
+    },
+    {
+      "path": "assets/img/blog/austrology.jpg",
+      "sha256": "59d570e02ff13037996199967a0bcb5f778691d9a3f93486df02c71049b71d0e"
+    },
+    {
+      "path": "assets/img/blog/being-by-doing.jpg",
+      "sha256": "35389d4fadcfa9c24fa1de7381c0f0bea7617e480f2302bb341fb5d2762f9d3c"
+    },
+    {
+      "path": "assets/img/blog/briandouglas.jpg",
+      "sha256": "c661376007ed654d57a0b2e20766af4610e557646a2b3b633e147881211944cf"
+    },
+    {
+      "path": "assets/img/blog/google-open-sourse.png",
+      "sha256": "7e6bf4b2d6e2c793ac1e8051099615bc3380989b3d6de06435077bd8400e657d"
+    },
+    {
+      "path": "assets/img/blog/low-tech-high.jpg",
+      "sha256": "4a1bb22553a3688a9b8ba2b280de1cc5c65da5d40f9ce05eb2209532609c7c64"
+    },
+    {
+      "path": "assets/img/blog/web dev.png",
+      "sha256": "0f7e0206347b489136d64f910fbe2077ccd24968c244da07784f53b9bca0fec7"
+    },
+    {
+      "path": "assets/img/certificate.png",
+      "sha256": "145a8a984093961a6bf3db718b351e5b4c4dc4e145980496f90bcb6c5f7ce4cd"
+    },
+    {
+      "path": "assets/img/contact.png",
+      "sha256": "61502d305214c0308e0908f973028c5c197d29fff1ad7f002e0c1449595cd4f8"
+    },
+    {
+      "path": "assets/img/contact.webp",
+      "sha256": "67c0035a94f3b2746a40e3abcb1774303b5d525dbe436e7d62fcddd89107050a"
+    },
+    {
+      "path": "assets/img/core.png",
+      "sha256": "ffe2ce3ad398f89061e42ba4062722254cb30487946bb1fd5ae082eb15879e77"
+    },
+    {
+      "path": "assets/img/discord.png",
+      "sha256": "f41c5be94c8487562aad88b54659a421ff918beb7844cb0fba1a9de2618941e3"
+    },
+    {
+      "path": "assets/img/footer-bg.png",
+      "sha256": "ced03b85e3bb6d4db1a1029c9f190477ed3b784ec04b763046b58ca9ca40a2b5"
+    },
+    {
+      "path": "assets/img/goodies (1).png",
+      "sha256": "8d7bb410e46638e124f3225b9ded157ee9ab5aebbc4341c579c26c3195500a45"
+    },
+    {
+      "path": "assets/img/goodies.png",
+      "sha256": "4b65cb43a35a5bd5ae5ce9e4dc1606bde282ea6f420c8f8743bd008e7941d4b9"
+    },
+    {
+      "path": "assets/img/goodies.webp",
+      "sha256": "6de9024b281f3dc8a4ec1efedfdbdcace6e237dddb0d679f09fa3526c5bc3010"
+    },
+    {
+      "path": "assets/img/grad.png",
+      "sha256": "822054712ee128443d5cea9c66feaf7e64d2bf157ce377dc6cb4849bf073b2aa"
+    },
+    {
+      "path": "assets/img/hack.jpg",
+      "sha256": "44f989832f0ee28357fbcdbe3b26b81f805930ab160c33cfaaac273594f395e0"
+    },
+    {
+      "path": "assets/img/hero-area.png",
+      "sha256": "f5ab6cc7f39260fdb210396614b45e006d1f98b01e9aa9f999c62dc523eec8e8"
+    },
+    {
+      "path": "assets/img/hero-area.png.svg",
+      "sha256": "a4324765a84d496d3bb122d5e7e0bc71c041b13d94192f354d7396da8c1ee5c1"
+    },
+    {
+      "path": "assets/img/intro-mobile.png",
+      "sha256": "8c56442e33322070830b8a88d02e700ec9b18633d81a031f0a41f7861e5d07b6"
+    },
+    {
+      "path": "assets/img/intro-mobile.webp",
+      "sha256": "b21f39ac2bc87aa52967155f370b3c7648cfbf2e7e82942c420b51fc087f1c80"
+    },
+    {
+      "path": "assets/img/intro.png",
+      "sha256": "6f99bc42ac59089b5e0f5742301a290a521f569b8ee0cedf7de059ac6cf406f1"
+    },
+    {
+      "path": "assets/img/join_us/core.png",
+      "sha256": "ffe2ce3ad398f89061e42ba4062722254cb30487946bb1fd5ae082eb15879e77"
+    },
+    {
+      "path": "assets/img/join_us/mentors.png",
+      "sha256": "a724464a0443a6781e342ea4232aefe84c99c31ff9f52271d532cfed18f42101"
+    },
+    {
+      "path": "assets/img/join_us/volunteer.png",
+      "sha256": "806f433d1d849324bba201bcf91eedfb36dd85e05a8c4df7010cf65f27e2f287"
+    },
+    {
+      "path": "assets/img/location.png",
+      "sha256": "50dc0812173a66e458c8dbaf25ab4573598a855eccc6f88155c7e4acf057e1c6"
+    },
+    {
+      "path": "assets/img/logo-small.png",
+      "sha256": "4396c8d8342528670b6638e6ef68165a417bbab71ca88cd64efdca1421a51dee"
+    },
+    {
+      "path": "assets/img/logo.png",
+      "sha256": "4f73da1d9dfcdbdfa855921b6d9dad606fdc06ec0db1395b75cef9e955930ab7"
+    },
+    {
+      "path": "assets/img/logo/logo1.png",
+      "sha256": "f6db1aac69c3b3a778faa17bc2d6706269fde6f7d5a3b57b93515c8e7028d53a"
+    },
+    {
+      "path": "assets/img/logo/logo2.png",
+      "sha256": "c6b060b3e2fccc2dbd0cc6c6e955c2559740f7aca2ea56cf601f3dbea7b47b78"
+    },
+    {
+      "path": "assets/img/logo/logo3.png",
+      "sha256": "02b1b25da09d3674f4cb1fc164ce1d915e8c5a60d4a9045d1e590a8bfb1a5995"
+    },
+    {
+      "path": "assets/img/mentors.png",
+      "sha256": "a724464a0443a6781e342ea4232aefe84c99c31ff9f52271d532cfed18f42101"
+    },
+    {
+      "path": "assets/img/nft-gift-5318418-4444760.webp",
+      "sha256": "6de9024b281f3dc8a4ec1efedfdbdcace6e237dddb0d679f09fa3526c5bc3010"
+    },
+    {
+      "path": "assets/img/one-yellow.png",
+      "sha256": "a64a64e500be06d5042e53b207e7bb8ec27cba2df38a7b2c4b095ee36d6b86a2"
+    },
+    {
+      "path": "assets/img/one.png",
+      "sha256": "42e1c7df3b91adbd0f6b296c1986e52afd7cb78254922fc735e43facf34fb324"
+    },
+    {
+      "path": "assets/img/open-source-logo.svg",
+      "sha256": "3ef2ab316e8db2dc5b89600004d9ed40805e5141cf40c251728fdd9c815e8016"
+    },
+    {
+      "path": "assets/img/opportunity/100 Days of Code.png",
+      "sha256": "4b9c21a9ed60bd60d83773d294b3405fb0d7ae33dd05b348b1b4eab9a3027f04"
+    },
+    {
+      "path": "assets/img/opportunity/100daysofcode.png",
+      "sha256": "f4a6e6c060ac4f8a66c14ebb14a0e4d2aa182f446e13e239b21e906ea73b691d"
+    },
+    {
+      "path": "assets/img/opportunity/Hacktoberfest.jpg",
+      "sha256": "678aa35ba1651dad0ed2f292e231a4d78d64a39aaaa65c80fb31542836a72369"
+    },
+    {
+      "path": "assets/img/opportunity/codein-small.png",
+      "sha256": "e7090b1703a922eceb5e98207041f62a4705b08e336e1b6b97921ab7d0ca2466"
+    },
+    {
+      "path": "assets/img/opportunity/codein-small.webp",
+      "sha256": "0a1b4b72242d67e2cb8424de7042d7329665f0cbdedcf30638a7554220aa27b3"
+    },
+    {
+      "path": "assets/img/opportunity/codein.png",
+      "sha256": "02c63fada039c45b1c2de898de4f8511b231286c51fbefb5723bd787880a8394"
+    },
+    {
+      "path": "assets/img/opportunity/fossasia.jpeg",
+      "sha256": "63176a807cf26c21f7e0fe99f7aeb19dcbbac4ba6fd0c005efe1f0d4cbb2b359"
+    },
+    {
+      "path": "assets/img/opportunity/gcp.png",
+      "sha256": "aa68beb3ff9d93fd522720857d513424d6709414d912af14a3db523d8773282f"
+    },
+    {
+      "path": "assets/img/opportunity/goldmensachs.jpg",
+      "sha256": "6a14f5085ac70d8b20184ca26abdf7f652c8b3d9c101c192174f8469bfd47887"
+    },
+    {
+      "path": "assets/img/opportunity/gsoc.png",
+      "sha256": "ca36f7089bd0af8b5f878fd938c388bd5632d79077d3adff3bfa290862f7a3d8"
+    },
+    {
+      "path": "assets/img/opportunity/gtechcamp.png",
+      "sha256": "f19ccac8d7ef39494ea8f8ccb8097b6aa59dd1a4e055b1ff1f19ffe90c9030c8"
+    },
+    {
+      "path": "assets/img/opportunity/mlh.png",
+      "sha256": "b03424731a3d5c3dfe5a6fc1b12f0c028d663f6aaafbef5e44b493a65b860781"
+    },
+    {
+      "path": "assets/img/opportunity/opp-1-small.jpg",
+      "sha256": "e7be0f4061214e44be983e174f216b6443fb49863de8c48ceb8d1ce87f1ef9b1"
+    },
+    {
+      "path": "assets/img/opportunity/opp-1-small.webp",
+      "sha256": "65d7775fc4bd59f6e4b60bbd10d6e93560b23d522e8242c360de6b2af93e632f"
+    },
+    {
+      "path": "assets/img/opportunity/opp-1.jpg",
+      "sha256": "dc59eef6fe2b5566248fcbf53b02d3e77157e8ec8d08a66566e6c16d7eb28574"
+    },
+    {
+      "path": "assets/img/opportunity/opp-1.webp",
+      "sha256": "a56999c48c31ce384a29a68d8acbdac54c3a0d74eadf6a1f27a58a72b41e6fc6"
+    },
+    {
+      "path": "assets/img/opportunity/opp-2.png",
+      "sha256": "d2796c178c698c590ae9b9202ab86ac4995a3e88260f7289ff939d77e940c5ae"
+    },
+    {
+      "path": "assets/img/opportunity/opp-2.webp",
+      "sha256": "c4ce9ecf906c92d4f0f12e50873173eb3f2e6b03f36c0ca116bbcedd008b02c5"
+    },
+    {
+      "path": "assets/img/opportunity/opp10.png",
+      "sha256": "44cd7ce5356da151e7e8e7468d1360ce8d07a698920bc48e3a2c3dffcf1bd63f"
+    },
+    {
+      "path": "assets/img/opportunity/opp12.png",
+      "sha256": "2457e545fcb17f7dff9f717f58b2aa7b13bcf4402b1e08272783b51e677bfadb"
+    },
+    {
+      "path": "assets/img/opportunity/opp7.png",
+      "sha256": "23414d14ab317ac2101fa55d69f0cfb4359700d6a8b37354930981c711da788e"
+    },
+    {
+      "path": "assets/img/opportunity/opp9.jpg",
+      "sha256": "f792efe1f9fec86dfeb3ff6792be25bef3fa312741e8e6ce3a17cf9c0038d11b"
+    },
+    {
+      "path": "assets/img/opportunity/opp__6.png",
+      "sha256": "4f0625903afeb2f17495562a00854cedf9c466289e89a1aa2f561954815a840a"
+    },
+    {
+      "path": "assets/img/opportunity/oppo5.png",
+      "sha256": "e443b194c19d81113a6f97a7ad01c9d1b1461ff19f96821a3e224473ed1335de"
+    },
+    {
+      "path": "assets/img/opportunity/oppo8.png",
+      "sha256": "3c190266153d215f8f08c65ffbd3158a777f864b81164633b74a29e93be68420"
+    },
+    {
+      "path": "assets/img/opportunity/oppor11.png",
+      "sha256": "7551829694ebd307f51afebcd7c8f4152172adf3a91a6192e17a2bfc2f871cb7"
+    },
+    {
+      "path": "assets/img/opportunity/oppor4.png",
+      "sha256": "a37a01eb226209a712af820b74b4506e1fdc778895f23e4ca974b867e433986c"
+    },
+    {
+      "path": "assets/img/part.png",
+      "sha256": "f0ceb810e68e487ea40f55495e49dcfb13ffcad85860be7d755ba5c091a991ec"
+    },
+    {
+      "path": "assets/img/pngtree-contact-us-flat-design-style-png-image_2766546-removebg-preview.png",
+      "sha256": "8cb6a64032aefd6ae9469146ac7cb210b65ed2273a0c244e353ebf4c61b9722f"
+    },
+    {
+      "path": "assets/img/preloader.gif",
+      "sha256": "e4a20699516548fdf43ad088db44140cb2bc248770ee7b010481550f9209c700"
+    },
+    {
+      "path": "assets/img/screencapture-codeincommunity-tech-2022-04-19-02_35_25.png",
+      "sha256": "082f2019ed3a968732f94af25f5d213936a4dbd823c0ea5dff8945d3f3456d24"
+    },
+    {
+      "path": "assets/img/social-og.jpg",
+      "sha256": "0e87b92cf481193c6074c27a7e374bb860585626498a0d508b7a159e3a16b0b5"
+    },
+    {
+      "path": "assets/img/team/-8enia0 - Pratap Divyansh.jpg",
+      "sha256": "585d96c751afee63d8b82ab58f59dcd05c24f25491889da9bbd56164fba6b858"
+    },
+    {
+      "path": "assets/img/team/20221029_155750 - Sakshi Goenka.jpg",
+      "sha256": "cdc6cfc122e18ffe71e457100f89899593069bf3c29dc00aacce7d7b60da60df"
+    },
+    {
+      "path": "assets/img/team/20221214_180840 - Komal Gupta.jpg",
+      "sha256": "b141ea6f20be99a33c963f529e6f9d2499bbfc87aa6e55adbb32ef0a40813d50"
+    },
+    {
+      "path": "assets/img/team/20221222_153626 - Faeka Ansari.jpg",
+      "sha256": "f2b97af29464fb0f2b6b396aa886dc457f13a3c5414ffe50d3cb76724bf071dd"
+    },
+    {
+      "path": "assets/img/team/2_20220716_205938_0001 - Krupesh Vithlani.png",
+      "sha256": "cb89df9572448646fb639da96abf555b55493c77380de1a10319a7d6ddc471c6"
+    },
+    {
+      "path": "assets/img/team/7D449580-BD1B-4BD5-9C00-83927DE11073 - Pratikkumar Mohite.jpeg",
+      "sha256": "fdea425f0498b752ac6edb01cf13a7d6eead9b91be438e57e8af38ed073c3aa0"
+    },
+    {
+      "path": "assets/img/team/AHARNA-HAQUE.webp",
+      "sha256": "87183f6c1bfd8bbaf4450f29582197741a48c1c8df665a77e8be65a02749554c"
+    },
+    {
+      "path": "assets/img/team/Aastha Shah.jpg",
+      "sha256": "2cbaf09ee339567f2753184454209fb38ceceb573355d62f83afcae34fa164af"
+    },
+    {
+      "path": "assets/img/team/Arunima-gdg - Arunima Chaudhuri.jpeg",
+      "sha256": "41114c7aafda7c93e3f658c878efbca3bc8037260edef11fe55b547c0ba98cf6"
+    },
+    {
+      "path": "assets/img/team/G-00-562 - Alan Martin.jpg",
+      "sha256": "3a6e1f5df88d858892e7c30753b7aa8f5bd4d1e1d2e096723b3f822cc1884815"
+    },
+    {
+      "path": "assets/img/team/IMG-20211226-WA0015 - Bhavik Kothari.jpg",
+      "sha256": "d8ec5d0f314d728148db7e5ef39c21cd8408567e5ae963a15086815c2caf5816"
+    },
+    {
+      "path": "assets/img/team/IMG-20220909-WA0044 - Trivedi Bakul.jpg",
+      "sha256": "8ab19f31ff6415c777d78567fff9c65ec5109d644f608c38153467d8bdb656bb"
+    },
+    {
+      "path": "assets/img/team/IMG-20221211-WA0266 - Srijanna Das.jpg",
+      "sha256": "d61f2ef7cf2769ecfd36e0453f97723759a9094bd2620d91f9968fc688a6d518"
+    },
+    {
+      "path": "assets/img/team/IMG-20221222-WA0017 - Nithish R.jpg",
+      "sha256": "b3abc4775b2d8b3080ece1f7fe1ad280d13797cd63561739558e0629bfa339a1"
+    },
+    {
+      "path": "assets/img/team/IMG_20201212_080046 - ATUL Sharma.jpg",
+      "sha256": "ad5ae689e7db6d5abcb89ccdcaaf7ed5d36636110139a33215d59cb93eaa6dd6"
+    },
+    {
+      "path": "assets/img/team/IMG_20211216_180037 - Shikha Chaturvedi.jpg",
+      "sha256": "8bb3931b30785978a231dc61152d45207a0bcefd4b8e50d5e2d9dbedeedbf4af"
+    },
+    {
+      "path": "assets/img/team/IMG_20220111_200114_117 - mr_pravin_ nag.jpg",
+      "sha256": "c74fc9bacda607639a4d46027c73db3cc962beaecdb0b936a8c46fa43492bb84"
+    },
+    {
+      "path": "assets/img/team/IMG_20220823_001417 - Aishwarya.jpg",
+      "sha256": "56243bffe649021caa8c5d26a85dc7823d988504d9905517338073c366cecdf0"
+    },
+    {
+      "path": "assets/img/team/IMG_20220827_185736 (1) (1) - P K (1).png",
+      "sha256": "ff770bb68d2eea8e70ff2f1ec45e70633e868a8885f9965faa7b7de7eac1261c"
+    },
+    {
+      "path": "assets/img/team/IMG_20221005_011143_263 - Riya Jaiswal.jpg",
+      "sha256": "fd04fb29bd468ad9d9aaa0cae609b4cbf7ccafd68320efecc6f583ef0d5faf97"
+    },
+    {
+      "path": "assets/img/team/IMG_20221216_202008 - Divjot Singh Arora.jpg",
+      "sha256": "50013ef4af30311df0e645b21ff4b93399794f2a41144e24219dccd34dfae2be"
+    },
+    {
+      "path": "assets/img/team/IMG_20221219_182613 - Chhavi J Singh.jpg",
+      "sha256": "b2058173973b1c91bed1a8feb53a29ed95982ad84e63c2906e29a32f10eafb93"
+    },
+    {
+      "path": "assets/img/team/IMG_20221222_210327 - khushboo jha.jpg",
+      "sha256": "4b50011a5c2774dd66bbb73f681e7bbecc4b3e2a5e9727d229c555e982e8886e"
+    },
+    {
+      "path": "assets/img/team/IMG_2777 - Yash Pimple.jpg",
+      "sha256": "3a81dad3b6bbdc4125485335b4cb99bf58be25c6c745d1080f1c908735db0cb8"
+    },
+    {
+      "path": "assets/img/team/InShot_20220926_202854195 - Swarna Jha.jpg",
+      "sha256": "09061fec99ff4dc52b3a9bff969d877860468c984b3dc84cd0805650f0e9d93f"
+    },
+    {
+      "path": "assets/img/team/Manan_Jain-1 - Manan Jain.jpg",
+      "sha256": "2dadebaed01ba92ff5a66bb25b4145aa3c887b0e3aeaeca810d820c5246c026c"
+    },
+    {
+      "path": "assets/img/team/Me - VISHNUPPRIYAN PL.jpg",
+      "sha256": "a70d7006faf1b4e654b56a6bb185bff91e5b763d24289af23c04160e09c9c0d9"
+    },
+    {
+      "path": "assets/img/team/NILESH KUMAR SINGH-small.jpg",
+      "sha256": "f5f137fea03eb83f16f8bc4b797589e8fac313733eec445ce255d60dd7216377"
+    },
+    {
+      "path": "assets/img/team/NILESH KUMAR SINGH-small.webp",
+      "sha256": "f9da93b555090defb5013f5eb6f46d28d6fd85d789db7393e7c04e4719c2cb1a"
+    },
+    {
+      "path": "assets/img/team/NILESH KUMAR SINGH.jpg",
+      "sha256": "86a6bc9d065879b7ba333930f5033af745e6aae3055f149e6c094cfacffd6007"
+    },
+    {
+      "path": "assets/img/team/Nishtha_Pandey_PR_and_Outreach - NISHTHA PANDEY.jpeg",
+      "sha256": "8d1e2cf2cfbf361f513e4383fff734ede6fe8631106ae6c1c2f514507a12dcbf"
+    },
+    {
+      "path": "assets/img/team/Nitesh Agnihotri.png",
+      "sha256": "71af5f683563ffd6d23c31e8360c5e5c382102ac1757d1a7cac0b34808d010a9"
+    },
+    {
+      "path": "assets/img/team/Nitesh Agnihotri.webp",
+      "sha256": "ad5af322df80ba3d6d7cf25693a342d3cb6fd2d739d58e9a66b21300e1aa6c87"
+    },
+    {
+      "path": "assets/img/team/Pavan.jpeg",
+      "sha256": "0108d0ea783680696ee4a517f3b44a93141b46351dbc9754ad8ec86f73fda900"
+    },
+    {
+      "path": "assets/img/team/Pavan.webp",
+      "sha256": "0995eb466a2877187294add100d505cd6699b36c73a5a10fd6a703e07dce1301"
+    },
+    {
+      "path": "assets/img/team/Photo (2) - Akshat Pattiwar.png",
+      "sha256": "b2044634b217e1db5fecd9e1b5c420351de7f2e5f0a790258f03b4422f96e48f"
+    },
+    {
+      "path": "assets/img/team/Picsart_22-06-25_23-32-11-244 - Paakhi Iyer.jpg",
+      "sha256": "d85ee6f893b7ec119da2e6610523aa13891beffaebe286e7a4b8ad6087723ca4"
+    },
+    {
+      "path": "assets/img/team/Priyanshu Mundra.webp.webp",
+      "sha256": "5260988348424bf52316794b354bb666bac89e9dc776b6ff88db9655c598272f"
+    },
+    {
+      "path": "assets/img/team/Renitha K - Renitha K.jpg",
+      "sha256": "06e0e5d62ec8b653108167f795200e757782e08831d2490a62d7f77fa1f7e81b"
+    },
+    {
+      "path": "assets/img/team/Saurav Mukherjee.png",
+      "sha256": "066a6e0f481f06648f28b220d1ac9e06efe215c6d5d543bd371195ee893ce635"
+    },
+    {
+      "path": "assets/img/team/Saurav Mukherjee.webp",
+      "sha256": "6b44126dd710fb2e30da63d68215389d7727feffc33a59a84932234f2b4c48c1"
+    },
+    {
+      "path": "assets/img/team/Screenshot_20221222-165128_LinkedIn - Devyani Channe.jpg",
+      "sha256": "a6e0b951dcc76c8a58e3d0702a9184184262260168ed0378297246e4ad06ef8c"
+    },
+    {
+      "path": "assets/img/team/Sidharth Sethi.png",
+      "sha256": "1c8faa19301a5064665f3dd7b648a60e4bd59c6c81e7c579af685b2d275a874f"
+    },
+    {
+      "path": "assets/img/team/Sidharth Sethi.webp",
+      "sha256": "9cc401b242c0204229fbfc474e5cb7c5504dbe8b7c76de7e7b3d93f7ebdab875"
+    },
+    {
+      "path": "assets/img/team/Sneha Roopa Sri.png",
+      "sha256": "e3fcd49f6a864bd0f39cdc60e33af24647d22f53559dfaee510d667d4cd99dc0"
+    },
+    {
+      "path": "assets/img/team/Sneha Roopa Sri.webp",
+      "sha256": "0954bc476813e7782a5279dcf2f9d00d1a51438cce5bf03e366023fe6c2675ef"
+    },
+    {
+      "path": "assets/img/team/Sujana Kamasany.png",
+      "sha256": "a13047fcb9faae951da725659e99382821ad9c799e852e0497f035dabb8a3032"
+    },
+    {
+      "path": "assets/img/team/Sujana Kamasany.webp",
+      "sha256": "88f635e1190ba8013cc32c40db7aafda609c072f1dfdb1946bd460628b80aed2"
+    },
+    {
+      "path": "assets/img/team/Sulagna Dutta Roy.jpg",
+      "sha256": "e8dfc27b271396c7564fbe36f40df980d1388723a9ef0ebe51e47d14c6631bae"
+    },
+    {
+      "path": "assets/img/team/aditi.jpg",
+      "sha256": "193421b73d030f0c3c2acf815de38f95940c49116a1253b110477e461a15f302"
+    },
+    {
+      "path": "assets/img/team/aditi.webp",
+      "sha256": "c1c4fae855da123ecd231f1e76045bf402146c7c987cbaee5ad500633b8e362f"
+    },
+    {
+      "path": "assets/img/team/akansha.jpg",
+      "sha256": "668b153c4f4a78fe01134571092e0a02dbe8a717fb75fe8821f4c81c9a438496"
+    },
+    {
+      "path": "assets/img/team/akansha.webp",
+      "sha256": "767a443875609b37cdc22184672e44b2660eebdd1a4ee4377ed49bbcab60a3ce"
+    },
+    {
+      "path": "assets/img/team/akriti.jpg",
+      "sha256": "9147c31001bdc59f9f4a4a86113e01516408c0c1f19ee9f6445007e0b0fc0c26"
+    },
+    {
+      "path": "assets/img/team/akriti.webp",
+      "sha256": "2f9854014a8dd34be74a3e40f87015d82e288174c94be61d7961eba92a83d68b"
+    },
+    {
+      "path": "assets/img/team/amisha-small.jpg",
+      "sha256": "a8799c509fd5bf536141ef72855db9e119542f55a99ac1c7d8757955fe3c484b"
+    },
+    {
+      "path": "assets/img/team/amisha-small.webp",
+      "sha256": "4fdfb2d2f40e58556eefb2f86e3c743303dd3640da4edb2c9500b550a7b7407d"
+    },
+    {
+      "path": "assets/img/team/amisha.jpg",
+      "sha256": "3cbbe5b464d1ca6085cb6756d4edf1341e346f118d8f97fb4c174bf2d0e0379c"
+    },
+    {
+      "path": "assets/img/team/anas profile - Anas - SS20CO016.jpg",
+      "sha256": "3d208d762851ee20b883bfdcf117a5ba438a101cd6b1f629e8b03f5e6a8818d6"
+    },
+    {
+      "path": "assets/img/team/anisha.jpg",
+      "sha256": "7f4901e90bfbdbe39666eee983fb67c106139a1b4df67b71fd7e227b5ccab411"
+    },
+    {
+      "path": "assets/img/team/anisha.webp",
+      "sha256": "2e16133f8d9a595f38ddd0d1d204582244f588088b812cf66e4c12a2db26adec"
+    },
+    {
+      "path": "assets/img/team/anjali.jpg",
+      "sha256": "b46694bc4fe53f56cafefa9cf5e452d7b863ba5b9513a3740abdc2fb1e9f1cb7"
+    },
+    {
+      "path": "assets/img/team/anjali.webp",
+      "sha256": "367491eaf79d4541a8b37214982601a124e01b36230ced82ebed023f6c877df9"
+    },
+    {
+      "path": "assets/img/team/anshu.jpg",
+      "sha256": "ad1e036d64dcbe4c12302085002dc672374e7feb701870f7473db6859844c40c"
+    },
+    {
+      "path": "assets/img/team/anshu.webp",
+      "sha256": "e096bbc5cb0062fb47cc9278a9871f436daed2492ad376ed2503ef2969f575f5"
+    },
+    {
+      "path": "assets/img/team/ayush_raj.png",
+      "sha256": "49dfded66b06c2b7b5f9461ff050a435db91f6c81ef22bdfdcc19b21704bd35e"
+    },
+    {
+      "path": "assets/img/team/blank.jpg",
+      "sha256": "e8a1097e0134e27379cce979803936728f08a4bf96e2bbac945080fcdcab7f0c"
+    },
+    {
+      "path": "assets/img/team/blank.webp",
+      "sha256": "0bd16374af6f5a0db19116ec532c4770be321bccbe9726e6e4bffa8b0eee56b7"
+    },
+    {
+      "path": "assets/img/team/chetan.jpg",
+      "sha256": "936a9b43d2001b92097bc8c5220bbfa5c8075343d3b135e3a562c3ddaffd64c5"
+    },
+    {
+      "path": "assets/img/team/chetan.webp",
+      "sha256": "01ec196c7543b28d20e76e3b66a4d413708bb20cad2074f3bd66444682aafdce"
+    },
+    {
+      "path": "assets/img/team/david.png",
+      "sha256": "7bebd2e6c1696ae4e6c2cd21c3c5901f023228bb4817cfb0c3045d643ce6d599"
+    },
+    {
+      "path": "assets/img/team/david.webp",
+      "sha256": "bd1fbd21c2394a5e3105e658c66dda130d1f232eaebe16d150ad5a3a79dde0dc"
+    },
+    {
+      "path": "assets/img/team/dimple.jpg",
+      "sha256": "3cac4db40f5717a49671d39684670e300e0b57885e6b802f3502414ebd6a8fac"
+    },
+    {
+      "path": "assets/img/team/hrithik_raj.jpeg",
+      "sha256": "146742961508832986f9ac0053ac78f40b58fd9b68b06669702e1869baf0462b"
+    },
+    {
+      "path": "assets/img/team/mansi.jpg",
+      "sha256": "d172d44d577ab06d36eaa563e4a2ae4b775776942845431534f8cfdad5aa9c0d"
+    },
+    {
+      "path": "assets/img/team/mansi.webp",
+      "sha256": "a22ce1dd6d4b5b223b9fd20e223d5b68e0f7668a193f770e1ae0efb6aafa8470"
+    },
+    {
+      "path": "assets/img/team/mohammad.jpg",
+      "sha256": "feebd100ff0e810beddd5131aa9acd57cc36a9740550a486ad6fdc11101e9ac2"
+    },
+    {
+      "path": "assets/img/team/muskan.jpg",
+      "sha256": "50c8efac51cc2d3eb18db151407205287e8a3326599a42a270db54d2d4f69f7e"
+    },
+    {
+      "path": "assets/img/team/muskan.webp",
+      "sha256": "743422d69ee24bfab7428dbb9b8474929c82d5aad7d67a13343a21a3232615a8"
+    },
+    {
+      "path": "assets/img/team/newpassportphotoWhite - Himangshu Lahkar.jpg",
+      "sha256": "39ff8d7bea7b4ec0adeab55c7614fe637a82f2fcb552c8030d91f865e3f3a106"
+    },
+    {
+      "path": "assets/img/team/pallavi.jpg",
+      "sha256": "ec4bfbc86192770e5ce8e18ae63723f4f71e4b608f51e06dee46b7cc7f3e4d05"
+    },
+    {
+      "path": "assets/img/team/pallavi.webp",
+      "sha256": "f640a1c44075865ed73e8e7a60f07d3ca2cb440f37f5a4a4afaa66f74c8970aa"
+    },
+    {
+      "path": "assets/img/team/parul.jpeg",
+      "sha256": "6d5b7f3912def302f099f6cce8862417ee4874f7cbfcc1c48fb5139194513196"
+    },
+    {
+      "path": "assets/img/team/pawan.png",
+      "sha256": "88e781f9cb9c73e9b45f33768cf9c95cb2512d97a6ad30e21790f39e815196c2"
+    },
+    {
+      "path": "assets/img/team/pfp - tanisha gupta.jpg",
+      "sha256": "0d6ec74feca10028400faba1fd310f58a35fd0f7daa1a8fb26436bd23b323f28"
+    },
+    {
+      "path": "assets/img/team/photo - CHHAVI SHARMA.jpg",
+      "sha256": "bc547e83a6bdfd11af68d2d1ab9b673c5eaeaed492c6bfd43f26fc877ae35ced"
+    },
+    {
+      "path": "assets/img/team/pranav.jpg",
+      "sha256": "2249058883049c71d1d40eaf4d8ffb32879d9055763ad9a38b153c0c7241efb6"
+    },
+    {
+      "path": "assets/img/team/pranav.webp",
+      "sha256": "4057f730c4503d30c95d6c5dc7c463398f27f1f8b6f2a57710cb457f9763b1d1"
+    },
+    {
+      "path": "assets/img/team/priya - Priya Chakraborty.jpg",
+      "sha256": "c316d543d33bfdb2aaa7a6a0692fe58eef9d06c190db27cdb4da05da89d80da9"
+    },
+    {
+      "path": "assets/img/team/priyal.jpg",
+      "sha256": "40a4eb74dad5b9142f690e9384f9613b2184866a96cfe9ab598f42637bc9355e"
+    },
+    {
+      "path": "assets/img/team/priyal.webp",
+      "sha256": "9f44e8cfb65964dddacdaa3fec5a23085d59de72780832301ecae65ca2494a27"
+    },
+    {
+      "path": "assets/img/team/priyanshu.jpg",
+      "sha256": "3d5b40c900170a1a83b15eb2e6f4f4d6e5658dacda5ebae17260dc8bf1cc0518"
+    },
+    {
+      "path": "assets/img/team/priyanshu.webp",
+      "sha256": "3f20940f338ca615a2720567d7e04232110ef93f463b4926ef0040de3ed6fafa"
+    },
+    {
+      "path": "assets/img/team/raghav.jpg",
+      "sha256": "0f8326013399620733584a13789154680e6b528ab9c96d5fdc6ccf21d89f6da6"
+    },
+    {
+      "path": "assets/img/team/raghav.webp",
+      "sha256": "3eb6248cf3e990d8e1f3cfd8afe887c6cdb59ec22461c1b5a47129dd9f048622"
+    },
+    {
+      "path": "assets/img/team/riya.jpg",
+      "sha256": "d6e8857215a9a7b7e3c03b4928021ad17671917c4fa9ffdd1084c24256da0701"
+    },
+    {
+      "path": "assets/img/team/riya.webp",
+      "sha256": "47ee839009add65b5c2633d5dcb8a17cf260513104541adc5288bdb1873fe6cb"
+    },
+    {
+      "path": "assets/img/team/rudra.jpg",
+      "sha256": "a3be2feece5f59b4301e9c1daa47a3b9482ade73e7767e7c1c8328f306361351"
+    },
+    {
+      "path": "assets/img/team/rudra.webp",
+      "sha256": "db1eb4404e8d9e35afbcdffab59036559c440956fc79a900bc8df4583f1da4f6"
+    },
+    {
+      "path": "assets/img/team/saurav.JPEG",
+      "sha256": "090ca15f635c619a3ead33ed39b79975cb0ae393ff3c227564b1a9c92e1c9126"
+    },
+    {
+      "path": "assets/img/team/shalini.jpeg",
+      "sha256": "4dadb93e5f0a54f01d9b7e63da91e7c2a80dbdcb4192faa1181a99b0cd467c33"
+    },
+    {
+      "path": "assets/img/team/shikha.jpg",
+      "sha256": "22aebf22a5d322aa6cf8d0bdef2e308f28450f4093ce5ad77c23d54fc798702a"
+    },
+    {
+      "path": "assets/img/team/shruti.jpg",
+      "sha256": "5710e6346a11c7dc6b9dd712718623bc2291c90cb059628216eb5a230b2f8b0b"
+    },
+    {
+      "path": "assets/img/team/shruti.webp",
+      "sha256": "a506e9dbdb7006290e09bcb8af12cde263b643f47df66e303ee8039a3b14f62e"
+    },
+    {
+      "path": "assets/img/team/shruti_khapure.jpg",
+      "sha256": "fb22b2dd6ff0fb745e365156044fdb1e4b0543b22ec9825bbce1f2dce7b20110"
+    },
+    {
+      "path": "assets/img/team/shruti_khapure.webp",
+      "sha256": "a0f33848a9e153b00aed6d2dd030937b18252f7fc32fff50938b97cff06a06be"
+    },
+    {
+      "path": "assets/img/team/sk-photu - Shravani Kaware.jpg",
+      "sha256": "3baad74dbc5a4af85dbd8f94f3ed05f0ce19782fe9c2fb96c7cc063b84fc59ed"
+    },
+    {
+      "path": "assets/img/team/swarna.jpg",
+      "sha256": "d5b9a7ae75b3c82ab488d415a7f73a35d897e8c7257edc72a17ac5a3ebc568b9"
+    },
+    {
+      "path": "assets/img/team/swarna.webp",
+      "sha256": "c9e7fd0492763d40d2e42ef51bb96058b8729716ceefde0a063f04752907a5fa"
+    },
+    {
+      "path": "assets/img/team/tara.jpg",
+      "sha256": "7fd505d6d73f0eedd3a53ebfe256da5fb05beeeeaab542c38569b82429e0da4a"
+    },
+    {
+      "path": "assets/img/team/tara.webp",
+      "sha256": "4a986e2f448d3a0264a23811aa242f417e343121068ffb86549b15a78fce286a"
+    },
+    {
+      "path": "assets/img/team/urishita-small.jpg",
+      "sha256": "b0a8d6bb188a0cb1900abb0ba48df2da6fff471ad4072aaf534004347022d6ab"
+    },
+    {
+      "path": "assets/img/team/urishita-small.webp",
+      "sha256": "4dcea62257b688f35465c113f19849ca70d6536342cc4bcbee77a551833d915f"
+    },
+    {
+      "path": "assets/img/team/urishita.jpg",
+      "sha256": "a3ad7da3f978c9a3574460aec1faacdb02f4c812c1fb690693d4756c4bdcce23"
+    },
+    {
+      "path": "assets/img/team/urishita.webp",
+      "sha256": "8cadaa2cadbdfebf200fed744481b2323234b99103ff1195987868d0e13bdf10"
+    },
+    {
+      "path": "assets/img/team/vaibhav.jpg",
+      "sha256": "6708537e6b08664a548c080e8e2ff848bfa723bd234c0231f71bfd01e6b9751b"
+    },
+    {
+      "path": "assets/img/team/vaibhav.webp",
+      "sha256": "cbcceb72c98afc97ba23301f6d928aa943cb273a3b68caa520a7ac216bcd83fe"
+    },
+    {
+      "path": "assets/img/team/yash mangal - YASH MANGAL.jpg",
+      "sha256": "cc126977805b0a9c5e5d77bcbb0eb73de31e806b0ba990da18b9285f22ea0f76"
+    },
+    {
+      "path": "assets/img/team/zeeshan.jpg",
+      "sha256": "291cd82f751004cd5538317b76f48a46f1ad26e07d144f20f86a0da08530a485"
+    },
+    {
+      "path": "assets/img/volunteer.png",
+      "sha256": "806f433d1d849324bba201bcf91eedfb36dd85e05a8c4df7010cf65f27e2f287"
+    },
+    {
+      "path": "assets/js/blog.js",
+      "sha256": "cb10e7889a7c69d4cac0729013acfcd44e4998c8f69eb46e8c2aa6c263a4f2bf"
+    },
+    {
+      "path": "assets/js/bootstrap.min.js",
+      "sha256": "c5a17d46976d471cf060c5a0e25749a323d6ab20cf0910f40afed81047ba21ef"
+    },
+    {
+      "path": "assets/js/contact-form-script.min.js",
+      "sha256": "a4caa3923bc65ef2c3cb2b64150944a3ece9bb7bac55d2d918e0e82394d34911"
+    },
+    {
+      "path": "assets/js/darkmode.js",
+      "sha256": "38f2f5bb6eb341bad9b31d621b57b1b71fc923fe6614973930dee73504648b37"
+    },
+    {
+      "path": "assets/js/form-validator.min.js",
+      "sha256": "c31a654938abf168fca328d9663ea83999b87ff36d18b016ea8aace1a9cb2cb1"
+    },
+    {
+      "path": "assets/js/jquery-min.js",
+      "sha256": "f16ab224bb962910558715c82f58c10c3ed20f153ddfaa199029f141b5b0255c"
+    },
+    {
+      "path": "assets/js/jquery.easing.min.js",
+      "sha256": "0757f7ff6e5f6a581922a5e2d42c5e0cf7475d880885a9802e8bdd5e4188dd34"
+    },
+    {
+      "path": "assets/js/jquery.magnific-popup.min.js",
+      "sha256": "3fddc6d28aba3c13d64cfd4847c333ff48c71d4a5a58bd1a0494ca6ae8ac1bb4"
+    },
+    {
+      "path": "assets/js/jquery.nav.js",
+      "sha256": "707a967916ff7ca8411b995ff078ee44fcbb627bbb11f067643f7a6ab7f99806"
+    },
+    {
+      "path": "assets/js/main.js",
+      "sha256": "8b65c9578431cb3f69224bfc2959856e472c981ed07ce8dd4bdcb5365fa181e6"
+    },
+    {
+      "path": "assets/js/nivo-lightbox.js",
+      "sha256": "c97a69e28f040c8159d3ae7760ab0279e3913331aa36afe9092834af30a780f2"
+    },
+    {
+      "path": "assets/js/owl.carousel.min.js",
+      "sha256": "4dd0937ab0a3e143c312ac6f66b57804fff04440d3ddb925ffc33370726fb730"
+    },
+    {
+      "path": "assets/js/popper.min.js",
+      "sha256": "6c7c29c5a11380b9d25194ce97eeae1e4bba0b5d0b0bc86329deae20f6ea7508"
+    },
+    {
+      "path": "assets/js/scrolling-nav.js",
+      "sha256": "31c0b81a4942ad2c68ebcecfc8f0698dbd8e47f8363bd54878f7efba1c2baa15"
+    },
+    {
+      "path": "assets/js/swipper.js",
+      "sha256": "a7d7e32ab481de0c79416ceed2983208a9435cc6b05abfbf60f3fedbc1e879a8"
+    },
+    {
+      "path": "assets/js/team.json",
+      "sha256": "dfb09558efb2f5122872e5e065e3233004007d7d6d10d4dd6b311f5c5b966844"
+    },
+    {
+      "path": "assets/js/wow.js",
+      "sha256": "0a575c5ec91df862fb63c1e945d05061c29b60c3a0508d1fc3cad7d47bab4c6e"
+    },
+    {
+      "path": "assets/milan.jpg",
+      "sha256": "17ff040b3bdaacf86cbe5c3f8aafea1c258b3cf14dcd87c255cc9fe777e3487a"
+    },
+    {
+      "path": "assets/owlcarousel/LICENSE",
+      "sha256": "8f635d6a713fd5f3c895a4bc072608248b1eaef5b66305bb5e8c512ba0f9eb0f"
+    },
+    {
+      "path": "assets/owlcarousel/assets/ajax-loader.gif",
+      "sha256": "0218fcc589e40339afb0fb6c42d25980d9bdca4660fa51f122b46663ea59d948"
+    },
+    {
+      "path": "assets/owlcarousel/assets/owl.carousel.css",
+      "sha256": "87b34f2c1c4c30f70478efc10c6c026f9311019f028157314717e6ddfa4c1f4b"
+    },
+    {
+      "path": "assets/owlcarousel/assets/owl.carousel.min.css",
+      "sha256": "016ab0bd0de4839680e4a717a57db9b182a8c2c5fdeec4c24db7a8df761fca4d"
+    },
+    {
+      "path": "assets/owlcarousel/assets/owl.theme.default.css",
+      "sha256": "ede1466795eb4042a622781a4b5f0e8e12a93257b6dc5deae7deaaf4d2b33a5e"
+    },
+    {
+      "path": "assets/owlcarousel/assets/owl.theme.default.min.css",
+      "sha256": "296b3d8e9fa36733999a69d6e630bc6361ea23dada8c98a0e48d34ba7f7d0ed2"
+    },
+    {
+      "path": "assets/owlcarousel/assets/owl.theme.green.css",
+      "sha256": "5b049497e9b5d096432514aac9801da788bb43ec47cd453adc8411c7a66e1b95"
+    },
+    {
+      "path": "assets/owlcarousel/assets/owl.theme.green.min.css",
+      "sha256": "df563098057fefccad51fde1dfd57cb9c8dbe66f0f5e524108f94faa381d3023"
+    },
+    {
+      "path": "assets/owlcarousel/assets/owl.video.play.png",
+      "sha256": "0436045686fddf10ccbbe2568e0cbffb457e7de7d43d1115c0056e81e97149ff"
+    },
+    {
+      "path": "assets/owlcarousel/owl.carousel.js",
+      "sha256": "84f62a9eaeb4e885739c5c33d4b5b479880f4b11bd3bfc322194fd80af4dbd64"
+    },
+    {
+      "path": "assets/owlcarousel/owl.carousel.min.js",
+      "sha256": "b394d33b2a7ec654a6b037ebfda6618341b3f897a362be624c923c2711b54a43"
+    },
+    {
+      "path": "assets/scss/_contact.scss",
+      "sha256": "adc2c67600015b9af3fffb27533e026b9abcc30906db75189bb17bf9eff17be0"
+    },
+    {
+      "path": "assets/scss/_feature.scss",
+      "sha256": "8dcb51ecb2a43af12980950d6bf338be8679287ca41125ccb484c8d1d7aa8a44"
+    },
+    {
+      "path": "assets/scss/_footer.scss",
+      "sha256": "8b344bb5baa6bdf295b19876b52550a6b64f30dc8f4431651397521b2b908a32"
+    },
+    {
+      "path": "assets/scss/_global.scss",
+      "sha256": "2d09d676b4834a6b73d1a69592b39d08239c583681eb1369f2b9c93782942c55"
+    },
+    {
+      "path": "assets/scss/_hero-area.scss",
+      "sha256": "e6217f0cfc5fdbdf4793e069d76a8465823ef8a4f5e60ac0e7c745e508a4f266"
+    },
+    {
+      "path": "assets/scss/_navbar.scss",
+      "sha256": "3f75ada339f5d189f2b2951bf672b989da029f34f07bb4664f16227bf5597de1"
+    },
+    {
+      "path": "assets/scss/_pricing.scss",
+      "sha256": "32658e9611a46eda06cde57aacff6438564220c8035c8b17440daedcb3108f55"
+    },
+    {
+      "path": "assets/scss/_service.scss",
+      "sha256": "efeec3568b45317ff1df0d7924aaaeb661ac7f2b3cebb7cdf4b3fda79fb12499"
+    },
+    {
+      "path": "assets/scss/_team.scss",
+      "sha256": "97c1f6956c43555cc166ec25bc5c989c77173d1345e65eab8c44fba115b2d7f4"
+    },
+    {
+      "path": "assets/scss/_testimonial.scss",
+      "sha256": "79f07b313070e93ca940be85b23aee6d64c9b91eb09e3f65c8e6f4869195d314"
+    },
+    {
+      "path": "assets/scss/colors/_presets.scss",
+      "sha256": "4826db726dc0291ae27a6fb998080e6ed3dd0461ab3aebd8672babf1c6d73131"
+    },
+    {
+      "path": "assets/scss/main.css",
+      "sha256": "0ee869313f51631dfea284c21055de8fa6bdad9ca81fb55f4a89c0088ee8029d"
+    },
+    {
+      "path": "assets/scss/main.css.map",
+      "sha256": "d93af9af6c4319735ff66459694973f01f7d4ba5cc8bf3ad0be226215442e0e5"
+    },
+    {
+      "path": "assets/scss/main.scss",
+      "sha256": "bbfec09f5594a15c9fa858fcb5c5c2c62bfc4d2d66ea06b13bd1c607df0a6a2c"
+    },
+    {
+      "path": "assets/scss/responsive.css",
+      "sha256": "c97e60ab25a15cbe9e304f6c9c7071f6a46a56abcd7e61c550bc714fdef9d05d"
+    },
+    {
+      "path": "assets/scss/responsive.css.map",
+      "sha256": "b71b284faaf80ec9f51e2c81e45c661b8bb355af5658adf00b5af4ba2f3ab0eb"
+    },
+    {
+      "path": "assets/scss/responsive.scss",
+      "sha256": "b32770377c16e75f13e0812f3baf29015d16fe81c486bf1e7489ac5d26fa2231"
+    },
+    {
+      "path": "assets/shalini.jpeg",
+      "sha256": "4dadb93e5f0a54f01d9b7e63da91e7c2a80dbdcb4192faa1181a99b0cd467c33"
+    },
+    {
+      "path": "assets/t-shirt.jpg",
+      "sha256": "58a67cd9952abc80986be7ebab49dc04b62c6ae181eca3e0bad51f0f167e5073"
+    },
+    {
+      "path": "assets/vanilla-tilt/.gitattributes",
+      "sha256": "e753774a5c6c845d5b43db5e4e133c8b7308c233f036517be1e2ae01cb068790"
+    },
+    {
+      "path": "assets/vanilla-tilt/.idea/misc.xml",
+      "sha256": "06ab2c6e9c2bb8931ac5c74133ec880182a23fb12f2c6e2b81f0aaefbd17449b"
+    },
+    {
+      "path": "assets/vanilla-tilt/.idea/modules.xml",
+      "sha256": "a61459c29a32346381e38993de22643102cc9dc10b1a33a27d2dc03c6937a93a"
+    },
+    {
+      "path": "assets/vanilla-tilt/.idea/runConfigurations.xml",
+      "sha256": "9b769560c57b140d7253568435610c2de0a82ee4a9cc14fdc2fcba24e2b428cd"
+    },
+    {
+      "path": "assets/vanilla-tilt/.idea/vanilla-tilt.js.iml",
+      "sha256": "0ff94b49c61885dd797e3da61dc3444c7ab48f317373ca42681910f1f8413752"
+    },
+    {
+      "path": "assets/vanilla-tilt/.idea/vcs.xml",
+      "sha256": "6323e12648862a0a96fc0d7877672817d6cd91e2c2a3c3d78f1090db23c6e88e"
+    },
+    {
+      "path": "assets/vanilla-tilt/CONTRIBUTORS.md",
+      "sha256": "7a3c9c3acc8885733fdcdbe62eda3b3a120ee6e961c7051ef5d3b199314ae086"
+    },
+    {
+      "path": "assets/vanilla-tilt/LICENSE",
+      "sha256": "0767a62d7b0d377af71662c070a763ceaf53f43412b59951c4fefcbc1b2467f9"
+    },
+    {
+      "path": "assets/vanilla-tilt/README.md",
+      "sha256": "6a594338151f41a3986e3f0cd4ce195b24ee01bc5352649cca7ca87794b1ac18"
+    },
+    {
+      "path": "assets/vanilla-tilt/build.js",
+      "sha256": "d9496062f42cdc5cac33068ed47db8b95d718bb8a05c0329eab5d8789b44fcbe"
+    },
+    {
+      "path": "assets/vanilla-tilt/dist/vanilla-tilt.babel.js",
+      "sha256": "89cd4dc0a1300875475a4bb84d914148bb4f3dc6db514960e8d9d01a24e07916"
+    },
+    {
+      "path": "assets/vanilla-tilt/dist/vanilla-tilt.babel.min.js",
+      "sha256": "f3819815db1f84cdb1c5aa7a00f48aaf8089ca7a8ac5ae2c866eccf2381c842e"
+    },
+    {
+      "path": "assets/vanilla-tilt/dist/vanilla-tilt.js",
+      "sha256": "4f6aa5bea0c672ff2e641532ca2083b0d68a6a1a6f36e928396d0e3dcb9110cf"
+    },
+    {
+      "path": "assets/vanilla-tilt/dist/vanilla-tilt.min.js",
+      "sha256": "48c90acd53180fdf66eac22319c0ce3a6990aeeebd654f84bdd3767a26a1e000"
+    },
+    {
+      "path": "assets/vanilla-tilt/lib/README.md",
+      "sha256": "6a594338151f41a3986e3f0cd4ce195b24ee01bc5352649cca7ca87794b1ac18"
+    },
+    {
+      "path": "assets/vanilla-tilt/lib/vanilla-tilt.es2015.js",
+      "sha256": "f24c188ad5a73806e61d23ad2cff82c91ab18cceb1c170c2e22110b64d0e691a"
+    },
+    {
+      "path": "assets/vanilla-tilt/lib/vanilla-tilt.js",
+      "sha256": "b70f3f1385cff13cd4557a22c82fcbb38ccc8dbb9670b9394de814ec6b1e7f3a"
+    },
+    {
+      "path": "assets/vanilla-tilt/package.json",
+      "sha256": "79fd8a182a7fb348d941597750aa71d7e9f5b08a98258389a1de74607bab62c9"
+    },
+    {
+      "path": "assets/vanilla-tilt/src/vanilla-tilt.js",
+      "sha256": "3224812f80b1db5c169b7e1c801933edc783afe4503b70dc8f54b1d005360f2e"
+    },
+    {
+      "path": "assets/vanilla-tilt/test/index.html",
+      "sha256": "618daf820e1bb2a8426e44acb0478dcdbeec25e1cda621d651fa8c589eeb9630"
+    },
+    {
+      "path": "assets/vanilla-tilt/vanilla-tilt.d.ts",
+      "sha256": "d2ef4bc9d45a79f4c7215b9893c0d593126ac0c8e2409ff04fb53a93068a285c"
+    },
+    {
+      "path": "benefit.html",
+      "sha256": "5e79c2fb0ccb0b8a9cbbf764db72c1d7c2dc04b28328a1103412814d54e20fc5"
+    },
+    {
+      "path": "blog.html",
+      "sha256": "a159171555fd687576878632f3924a7be7442fb4271b62c5afaf12f4bfc7ae8a"
+    },
+    {
+      "path": "giveaway.html",
+      "sha256": "d19083b52c35e35d7a7e0680c33435f4e42486bc9dddf27298696897ad19fb6c"
+    },
+    {
+      "path": "hacktoberfest2022.html",
+      "sha256": "2622a176dba26ba46e53de036bbe59c407108dfb750691ac0338eb7ea2348635"
+    },
+    {
+      "path": "index.html",
+      "sha256": "2551c7cb54b62d47cbc342d8b0204a3b5b2df79cb594dd574774a298ca6ebce8"
+    },
+    {
+      "path": "open-source-contributions.html",
+      "sha256": "793cb139c8a4ebaefb8c0a9fb788cf0ba10ad11882dacc403e93fcaaf4c14497"
+    },
+    {
+      "path": "opportunity.html",
+      "sha256": "fc2ee1f7ba82e196679ec511a94552d2d2fb91748e4a0d2a48f948121f4e2a97"
+    },
+    {
+      "path": "preloader/animate.css",
+      "sha256": "81cdaee2dedfc313ccf35708edb03491d4c79b5c7fb97563cd2400778fd04ee9"
+    },
+    {
+      "path": "preloader/blog.css",
+      "sha256": "1b1e8d0ad5ccd725448ff5c9047a0fb4618875b2cd43ac998c8d4483bbb1929a"
+    },
+    {
+      "path": "preloader/bootstrap-grid.css",
+      "sha256": "7b3973a9f4ea2594e3103475f2778a736b544d9b56a33de843fa2e598f5698ef"
+    },
+    {
+      "path": "preloader/bootstrap-grid.css.map",
+      "sha256": "d8c8233b4ce9a9866c71ab50486589f48a3d53c123bd7934898ca0633d50f8cb"
+    },
+    {
+      "path": "preloader/bootstrap-grid.min.css",
+      "sha256": "bdd4854405abe8b4e8827466c728ba42548ee4ef8c0be546c8c6f3893ac19814"
+    },
+    {
+      "path": "preloader/bootstrap-grid.min.css.map",
+      "sha256": "919ce55cba530b45af2f400bee75dfd3b049dbc5a763fd47fc7aca812ebc4382"
+    },
+    {
+      "path": "preloader/bootstrap-reboot.css",
+      "sha256": "7195a153c9ed05ebe76e134487786e9e72288ba744d5e5305f8d6c07af9b1e6a"
+    },
+    {
+      "path": "preloader/bootstrap-reboot.css.map",
+      "sha256": "ddee9ac2a5cf8a3c7dd7c773cb36db1cac1a0c14ec210f14b37f10637d06466b"
+    },
+    {
+      "path": "preloader/bootstrap-reboot.min.css",
+      "sha256": "d73eec473c0dcaaa5c4eba8f77f897bb3a00a6a0dd8e945b1f08c067c40c84e9"
+    },
+    {
+      "path": "preloader/bootstrap-reboot.min.css.map",
+      "sha256": "7489b75595f3b706c89613b356dfa0820e43be1a76f0c250189a3078e1fd7001"
+    },
+    {
+      "path": "preloader/bootstrap.css",
+      "sha256": "784c7b82fabeb84334a38914062cbff8cc65eab1c7f4d43d5334415877bd9978"
+    },
+    {
+      "path": "preloader/bootstrap.css.map",
+      "sha256": "08c0198f724aa19515612c553d2fc57866ad9984af1e4ba3a39a1a64b357c74a"
+    },
+    {
+      "path": "preloader/bootstrap.min.css",
+      "sha256": "6f506882dbacb3e530719afe6deb2aeeff537d3ff5712d81a877391df7d09ac1"
+    },
+    {
+      "path": "preloader/bootstrap.min.css.map",
+      "sha256": "c4c67449a48161948756315d653013fc88d1131448c52ae259c24b700f67923d"
+    },
+    {
+      "path": "preloader/index.html",
+      "sha256": "554703b5b4be8afd9d2dd466fd1a969f8b6b9bbb5d5874ae6de0a932406eef0d"
+    },
+    {
+      "path": "preloader/magnific-popup.css",
+      "sha256": "1155981e8193622f58553eed0bba2fa43512af362a3d54dedef64c46970bb371"
+    },
+    {
+      "path": "preloader/main.css",
+      "sha256": "425bb4e255e7736ac6f57c6df23a120221b21495653dde1222c349f86d0afb19"
+    },
+    {
+      "path": "preloader/nivo-lightbox.css",
+      "sha256": "734dc1b95bdb9dc26946c89c4953de4f620a723d79ac77c487549287ee4c8915"
+    },
+    {
+      "path": "preloader/oppurtunity.css",
+      "sha256": "b0223133af7c7e92d652322ce3d459f40825889ec61c15fe493f0f165959e4a4"
+    },
+    {
+      "path": "preloader/owl.carousel.min.css",
+      "sha256": "b367d14f6bc8959e2fb3f8aecbe000d54b9ea49b767fba32a034d1519430629f"
+    },
+    {
+      "path": "preloader/owl.theme.css",
+      "sha256": "ed5006f7f00f2f058ac47e6cf76e1a7fac3d4da344191507fea3af0416edd289"
+    },
+    {
+      "path": "preloader/responsive.css",
+      "sha256": "59784fe62a70540ad9b2f9432c97f9ea06cb7e429a992ec4c62c217aab397fe3"
+    },
+    {
+      "path": "preloader/style.css",
+      "sha256": "633d95dc019f04a5de2443f59594fcec37bf225c0afc28aed54ce6dad9a87d23"
+    },
+    {
+      "path": "preloader/swipper.css",
+      "sha256": "f1d831e9890d6e1085cdef76561e9b54293bfb4c37fc9f83063aef67b4ca0f68"
+    },
+    {
+      "path": "responsive.css",
+      "sha256": "2ef683a85974f14e3dd5ce2f2064ed288aeb495561aeee7af4d76ab17e8c78bd"
+    },
+    {
+      "path": "sitemap.xml",
+      "sha256": "834f168ea66d1aa71ce0bf3a690ee800dfc928741095e83d5df6ed547f687ea8"
+    },
+    {
+      "path": "teamMembers.html",
+      "sha256": "8d80787ee5104932d7775670f2f162720a2027623e43d114c08bf2f9f6afc47a"
+    }
+  ]
+}
