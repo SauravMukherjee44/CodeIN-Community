@@ -23,6 +23,9 @@
       "@codein-community/toolkit": ["../../packages/toolkit/src/index.ts"],
       "@codein-community/toolkit/github": [
         "../../packages/toolkit/src/github.ts"
+      ],
+      "@codein-community/toolkit/developer": [
+        "../../packages/toolkit/src/developer.ts"
       ]
     }
   },

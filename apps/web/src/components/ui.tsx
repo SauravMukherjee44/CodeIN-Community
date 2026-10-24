@@ -1,5 +1,6 @@
+import { Icon } from "./icon";
 import Link from "next/link";
-import { tools } from "@/lib/community";
+import { allTools } from "@/lib/community";
 export function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
     <p className="eyebrow">
@@ -24,24 +25,28 @@ export function PageIntro({
     </section>
   );
 }
-export function ToolCards() {
+export function ToolCards({ group }: { group?: "developer" | "maintainer" }) {
   return (
     <div className="tool-grid">
-      {tools.map((t) => (
-        <Link className="tool-card" key={t.slug} href={"/tools/" + t.slug}>
-          <div className="tool-top">
-            <span className="tool-icon" aria-hidden="true">
-              {t.icon}
-            </span>
-            <span className="muted mono">{t.number} / OPEN SOURCE</span>
-          </div>
-          <h3>
-            {t.title} <span aria-hidden="true">↗</span>
-          </h3>
-          <p>{t.description}</p>
-          <code>{t.command}</code>
-        </Link>
-      ))}
+      {allTools
+        .filter((t) => !group || t.group === group)
+        .map((t) => (
+          <Link className="tool-card" key={t.slug} href={"/tools/" + t.slug}>
+            <div className="tool-top">
+              <span className="tool-icon" aria-hidden="true">
+                <Icon name={t.icon} size={24} />
+              </span>
+              <span className="muted mono">
+                {t.group === "developer" ? "BROWSER TOOL" : "MAINTAINER TOOL"}
+              </span>
+            </div>
+            <h3>
+              {t.title} <Icon name="arrow-up-right" size={17} />
+            </h3>
+            <p>{t.description}</p>
+            <code>{t.command}</code>
+          </Link>
+        ))}
     </div>
   );
 }
@@ -65,7 +70,7 @@ export function SectionHeading({
       </div>
       {link && (
         <Link className="text-link" href={link.href}>
-          {link.label} <span aria-hidden="true">↗</span>
+          {link.label} <Icon name="arrow-up-right" size={17} />
         </Link>
       )}
     </div>

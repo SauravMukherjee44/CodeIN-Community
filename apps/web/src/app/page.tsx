@@ -1,7 +1,14 @@
+import { Icon } from "@/components/icon";
 import Link from "next/link";
 import Image from "next/image";
 import { Eyebrow, ToolCards, SectionHeading } from "@/components/ui";
-import { community, events } from "@/lib/community";
+import {
+  community,
+  events,
+  communityMilestones,
+  sponsors,
+  featuredPrograms,
+} from "@/lib/community";
 import baseline from "@/data/contributors.json";
 export default function Home() {
   return (
@@ -22,10 +29,10 @@ export default function Home() {
           </p>
           <div className="actions">
             <a className="button" href={community.discord}>
-              Find your people <span aria-hidden="true">↗</span>
+              Find your people <Icon name="arrow-up-right" size={17} />
             </a>
             <Link href="/tools" className="button secondary">
-              Explore the toolkit <span aria-hidden="true">→</span>
+              Explore the toolkit <Icon name="arrow-right" size={17} />
             </Link>
           </div>
           <div className="hero-proof">
@@ -70,12 +77,41 @@ export default function Home() {
       <div className="principles-strip">
         <div className="container">
           <span>COMMUNITY, WITH PURPOSE</span>
-          <span>↗ Learn by building</span>
-          <span>⌘ Tools that give back</span>
-          <span>✳ People before pull requests</span>
-          <span>↔ Open source, always</span>
+          <span>
+            <Icon name="book" size={16} /> Learn by building
+          </span>
+          <span>
+            <Icon name="code" size={16} /> Tools that give back
+          </span>
+          <span>
+            <Icon name="people" size={16} /> People before pull requests
+          </span>
+          <span>
+            <Icon name="shield" size={16} /> Open source, always
+          </span>
         </div>
       </div>
+      <section
+        className="community-numbers container"
+        aria-labelledby="milestones-title"
+      >
+        <div>
+          <Eyebrow>BUILT TOGETHER, OVER THE YEARS</Eyebrow>
+          <h2 id="milestones-title">A community with real impact.</h2>
+          <p>Milestones shared on the original CodeIN website.</p>
+        </div>
+        <dl>
+          {communityMilestones.map((stat) => (
+            <div key={stat.label}>
+              <dt>
+                <Icon name={stat.icon} size={16} />
+                {stat.label}
+              </dt>
+              <dd>{stat.value}</dd>
+            </div>
+          ))}
+        </dl>
+      </section>
       <span id="services" />
       <section className="section container" id="about">
         <SectionHeading
@@ -86,7 +122,10 @@ export default function Home() {
         />
         <div className="values-grid">
           <article>
-            <span className="number">01</span>
+            <span className="number">
+              <Icon name="book" size={19} />
+              01
+            </span>
             <h3>Learn in good company</h3>
             <p>
               Ask the question. Share what you know. Find a community that makes
@@ -94,7 +133,10 @@ export default function Home() {
             </p>
           </article>
           <article>
-            <span className="number">02</span>
+            <span className="number">
+              <Icon name="git-pull" size={19} />
+              02
+            </span>
             <h3>Make your first contribution</h3>
             <p>
               From a clearer README to a thoughtful bug fix, small contributions
@@ -102,7 +144,10 @@ export default function Home() {
             </p>
           </article>
           <article>
-            <span className="number">03</span>
+            <span className="number">
+              <Icon name="rocket" size={19} />
+              03
+            </span>
             <h3>Build things people use</h3>
             <p>
               Explore practical, open-source tools. Help improve them. Leave
@@ -117,21 +162,24 @@ export default function Home() {
           <SectionHeading
             eyebrow="THE CODEIN TOOLKIT"
             title="A few good tools. A better starting point."
-            description="Practical utilities for the people who keep open source moving. Free to use, open to improve."
+            description="Format JSON, inspect URLs, and convert Base64. Useful utilities for your everyday development workflow."
             link={{ href: "/tools", label: "Open the workbench" }}
           />
-          <ToolCards />
+          <ToolCards group="developer" />
           <div className="tool-footnote">
-            <span className="status-dot" /> Available in your browser, terminal,
-            and TypeScript projects.<Link href="/docs">Read the docs →</Link>
+            <span className="status-dot" /> Developer tools run locally in your
+            browser.
+            <Link href="/tools#maintainer-tools">
+              Explore maintainer tools →
+            </Link>
           </div>
         </div>
       </section>
+      <span id="open-source-contributions-home" />
       <section
         className="section container contribution-section"
-        id="opportunity"
+        id="first-contribution"
       >
-        <span id="open-source-contributions-home" />
         <div className="terminal">
           <div className="terminal-bar">
             <span />
@@ -141,17 +189,17 @@ export default function Home() {
           </div>
           <pre>
             <span className="terminal-comment">
-              # Every contribution starts with a little curiosity.
+              # Every contribution counts.
             </span>
             {"\n\n"}
-            <span className="terminal-prompt">$</span> git checkout -b
-            my-first-contribution{"\n"}
+            <span className="terminal-prompt">$</span> git switch -c first-pr
+            {"\n"}
             <span className="terminal-output">
-              A clearer sentence. A fixed bug. A new possibility.
+              One small change. Real impact.
             </span>
             {"\n\n"}
-            <span className="terminal-prompt">$</span> git commit -m &quot;make
-            something better&quot;{"\n"}
+            <span className="terminal-prompt">$</span> git commit -m
+            &quot;Improve docs&quot;{"\n"}
             <span className="terminal-output">
               You’re part of the story now. ✳
             </span>
@@ -167,14 +215,63 @@ export default function Home() {
             questions all count.
           </p>
           <Link className="button" href="/contribute">
-            Make your first contribution <span aria-hidden="true">→</span>
+            Make your first contribution <Icon name="arrow-right" size={17} />
           </Link>
           <p className="micro">
             No perfect résumé required. Just a willingness to learn.
           </p>
         </div>
       </section>
-      <span id="winterfest" />
+      <span id="opportunity" />
+      <section
+        className="section container programs-section"
+        id="programs"
+        aria-label="Community programs"
+      >
+        <SectionHeading
+          eyebrow="PROGRAMS THAT BROUGHT US TOGETHER"
+          title="Big ideas. Shared experiences."
+          description="The challenges, festivals, and hackathons that shaped CodeIN. Revisit the original banners, stories, and recordings."
+          link={{ href: "/events", label: "All community programs" }}
+        />
+        <div className="program-grid">
+          {featuredPrograms.map((program) => (
+            <article
+              className="program-card"
+              key={program.slug}
+              id={program.slug === "winter-fest" ? "winterfest" : undefined}
+            >
+              <Link href={"/events/" + program.slug} className="program-banner">
+                <Image
+                  src={program.image}
+                  alt={"Original " + program.title + " community banner"}
+                  width={640}
+                  height={400}
+                  sizes="(max-width: 760px) 90vw, 400px"
+                />
+              </Link>
+              <div className="program-body">
+                <p className="eyebrow">
+                  <Icon name="calendar" size={14} />
+                  {program.date}
+                </p>
+                <h3>{program.title}</h3>
+                <p>{program.description}</p>
+                <div className="program-actions">
+                  <Link className="text-link" href={"/events/" + program.slug}>
+                    Explore the program <Icon name="arrow-right" size={15} />
+                  </Link>
+                  {program.url && (
+                    <a className="text-link" href={program.url}>
+                      Watch the recap <Icon name="arrow-up-right" size={15} />
+                    </a>
+                  )}
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
       <section className="section events-section" id="events">
         <div className="container">
           <SectionHeading
@@ -186,15 +283,18 @@ export default function Home() {
           <div className="event-grid">
             {events.slice(0, 3).map((e) => (
               <article className="event-card" key={e.slug}>
-                <Image
-                  src={e.image}
-                  alt={e.title + " session artwork"}
-                  width={480}
-                  height={270}
-                />
+                <div className="event-artwork">
+                  <Image
+                    src={e.image}
+                    alt={e.title + " session artwork"}
+                    width={480}
+                    height={270}
+                  />
+                </div>
                 <div>
                   <span className="eyebrow">
-                    PAST SESSION · {e.date.slice(0, 4)}
+                    <Icon name="calendar" size={13} /> PAST SESSION ·{" "}
+                    {e.date.slice(0, 4)}
                   </span>
                   <h3>{e.title}</h3>
                   <p>{e.speaker}</p>
@@ -307,9 +407,42 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <section
+        className="sponsors-section section container"
+        id="community_partner"
+        aria-labelledby="sponsors-title"
+      >
+        <div className="sponsors-heading">
+          <Eyebrow>PART OF THE CODEIN STORY</Eyebrow>
+          <h2 id="sponsors-title">Our sponsors & supporters.</h2>
+          <p>
+            With gratitude to the organizations recognized on our original
+            website.
+          </p>
+        </div>
+        <div className="sponsor-grid">
+          {sponsors.map((s) => (
+            <a
+              href={s.url}
+              key={s.name}
+              className="sponsor-logo"
+              aria-label={s.name}
+            >
+              <Image
+                src={s.image}
+                alt={s.name}
+                width={220}
+                height={120}
+                sizes="(max-width: 600px) 40vw, 200px"
+              />
+              <span>{s.name}</span>
+            </a>
+          ))}
+        </div>
+      </section>
+      <span id="blog" />
       <span id="joinus" />
       <span id="joinushere" />
-      <span id="community_partner" />
       <span id="contributor" />
       <section className="join-section" id="contact">
         <div className="container">
@@ -321,18 +454,11 @@ export default function Home() {
           </h2>
           <div className="actions">
             <a className="button" href={community.discord}>
-              Join us on Discord ↗
+              Join us on Discord <Icon name="arrow-up-right" size={17} />
             </a>
             <Link className="text-link" href="/contact">
-              Let’s collaborate →
+              Let’s collaborate <Icon name="mail" size={17} />
             </Link>
-          </div>
-          <div className="past-supporters" id="blog">
-            <span>WITH GRATITUDE TO PAST SUPPORTERS</span>
-            <p>
-              GeeksforGeeks <b>·</b> Azure Developer Community <b>·</b> Coding
-              Minutes <b>·</b> Newton School
-            </p>
           </div>
         </div>
       </section>

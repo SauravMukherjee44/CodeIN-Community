@@ -1,4 +1,5 @@
 "use client";
+import { Icon, type IconName } from "./icon";
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -35,6 +36,7 @@ export function Header() {
           aria-expanded={open}
           aria-controls="main-navigation"
         >
+          <Icon name={open ? "close" : "menu"} size={16} />
           {open ? "Close menu" : "Menu"}
         </button>
         <nav
@@ -43,17 +45,18 @@ export function Header() {
           aria-label="Main navigation"
         >
           {[
-            ["Community", "/community"],
-            ["Tools", "/tools"],
-            ["Events", "/events"],
-            ["Contribute", "/contribute"],
-          ].map(([label, href]) => (
+            ["Community", "/community", "people"],
+            ["Tools", "/tools", "terminal"],
+            ["Events", "/events", "calendar"],
+            ["Contribute", "/contribute", "git-pull"],
+          ].map(([label, href, icon]) => (
             <Link key={href} href={href} onClick={() => setOpen(false)}>
+              <Icon name={icon as IconName} size={15} />
               {label}
             </Link>
           ))}
           <Link href="/contributors" onClick={() => setOpen(false)}>
-            Our people
+            <Icon name="people" size={15} /> Our people
           </Link>
         </nav>
         <div className="nav-actions">
@@ -62,10 +65,10 @@ export function Header() {
             aria-label={dark ? "Switch to light theme" : "Switch to dark theme"}
             onClick={toggle}
           >
-            {dark ? "☀" : "☾"}
+            <Icon name={dark ? "sun" : "moon"} size={18} />
           </button>
           <a className="button small" href={community.discord}>
-            Join the community <span aria-hidden="true">↗</span>
+            Join the community <Icon name="arrow-up-right" size={15} />
           </a>
         </div>
       </div>
@@ -113,7 +116,16 @@ export function Footer() {
           </span>
           <span>
             <Link href="/privacy">Privacy</Link>
-            <a href="https://www.netlify.com">Hosted on Netlify ↗</a>
+            <a className="netlify-badge" href="https://www.netlify.com">
+              <small>Community partner</small>
+              <Image
+                src="/images/netlify-badge.svg"
+                alt="Deploys by Netlify"
+                width={114}
+                height={50}
+                unoptimized
+              />
+            </a>
           </span>
         </div>
       </div>

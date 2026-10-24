@@ -3,10 +3,18 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { PageIntro, ToolCards, Eyebrow } from "@/components/ui";
+import { DeveloperWorkbench } from "@/components/developer-workbench";
 import { ToolWorkbench } from "@/components/tool-workbench";
 import { Contributors } from "@/components/contributors";
 import { ContributionGuide } from "@/components/contribution-guide";
-import { community, events, programs, tools } from "@/lib/community";
+import {
+  community,
+  events,
+  programs,
+  allTools,
+  developerTools,
+  type DeveloperToolKind,
+} from "@/lib/community";
 import team from "@/data/historical-team.json";
 import Docs from "@/content/docs.mdx";
 const definitions: Record<string, [string, string]> = {
@@ -15,8 +23,8 @@ const definitions: Record<string, [string, string]> = {
     "A place to ask questions, meet other developers, and make useful things together.",
   ],
   tools: [
-    "Small tools. Meaningful progress.",
-    "A practical workbench for open-source maintainers. Use it in your browser, terminal, or TypeScript projects.",
+    "Your everyday developer workbench.",
+    "Small utilities for the work between the big ideas. Format data, untangle URLs, and make open-source maintenance easier.",
   ],
   events: [
     "The conversations live on.",
@@ -53,7 +61,7 @@ const definitions: Record<string, [string, string]> = {
 };
 function definition(slug: string): [string, string] | undefined {
   if (slug.startsWith("tools/")) {
-    const t = tools.find((t) => "tools/" + t.slug === slug);
+    const t = allTools.find((t) => "tools/" + t.slug === slug);
     if (t) return [t.title, t.description];
   }
   if (slug.startsWith("events/")) {
@@ -65,7 +73,7 @@ function definition(slug: string): [string, string] | undefined {
 export function generateStaticParams() {
   return [
     ...Object.keys(definitions),
-    ...tools.map((t) => "tools/" + t.slug),
+    ...allTools.map((t) => "tools/" + t.slug),
     ...programs.map((p) => "events/" + p.slug),
   ].map((slug) => ({ slug: slug.split("/") }));
 }
@@ -104,13 +112,42 @@ export default async function Page({
       <div className="container page-content">
         {slug === "tools" ? (
           <>
-            <ToolCards />
+            <section
+              className="catalog-group"
+              id="developer-tools"
+              aria-labelledby="developer-tools-title"
+            >
+              <div className="catalog-heading">
+                <div>
+                  <Eyebrow>FOR YOUR EVERYDAY WORK</Eyebrow>
+                  <h2 id="developer-tools-title">Developer tools</h2>
+                </div>
+                <p>No account. No uploads. Your data stays in your browser.</p>
+              </div>
+              <ToolCards group="developer" />
+            </section>
+            <section
+              className="catalog-group subsection"
+              id="maintainer-tools"
+              aria-labelledby="maintainer-tools-title"
+            >
+              <div className="catalog-heading">
+                <div>
+                  <Eyebrow>FOR THE PROJECTS YOU CARE FOR</Eyebrow>
+                  <h2 id="maintainer-tools-title">Maintainer tools</h2>
+                </div>
+                <p>Public GitHub workflows, plus a shared library and CLI.</p>
+              </div>
+              <ToolCards group="maintainer" />
+            </section>
             <div className="info-grid subsection">
               <article className="info-card">
                 <h2>Yours to use. Yours to improve.</h2>
                 <p>
-                  All three tools share portable, tested TypeScript engines.
-                  Bring them into your own workflow under the MIT license.
+                  The maintainer tools share portable, tested TypeScript engines
+                  with the CLI. Developer utilities also have a browser-portable
+                  library entry point. Bring them into your own workflow under
+                  the MIT license.
                 </p>
                 <Link className="text-link" href="/docs">
                   CLI & libraries →
@@ -128,6 +165,8 @@ export default async function Page({
               </article>
             </div>
           </>
+        ) : developerTools.some((t) => slug === "tools/" + t.slug) ? (
+          <DeveloperWorkbench kind={slug.split("/")[1] as DeveloperToolKind} />
         ) : slug.startsWith("tools/") ? (
           <ToolWorkbench
             kind={
@@ -201,12 +240,14 @@ export default async function Page({
             <div className="event-grid">
               {events.map((e) => (
                 <article className="event-card" key={e.slug}>
-                  <Image
-                    src={e.image}
-                    alt={e.title + " artwork"}
-                    width={480}
-                    height={270}
-                  />
+                  <div className="event-artwork">
+                    <Image
+                      src={e.image}
+                      alt={e.title + " artwork"}
+                      width={480}
+                      height={270}
+                    />
+                  </div>
                   <div>
                     <p className="eyebrow">PAST SESSION · {e.date}</p>
                     <h2 style={{ fontSize: 23 }}>{e.title}</h2>
@@ -430,9 +471,9 @@ export default async function Page({
             <h2>Browser storage</h2>
             <p>
               Your theme preference and contribution checklist are saved locally
-              in your browser. Template-builder input is processed in the
-              browser and is not sent to our server. Downloads are generated
-              when you request them.
+              in your browser. Template-builder and developer-tool input is
+              processed in the browser and is not sent to our server. Downloads
+              are generated when you request them.
             </p>
             <h2>External services</h2>
             <p>
@@ -459,6 +500,16 @@ function Program({ slug }: { slug: string }) {
   return (
     <div className="prose">
       <p className="notice">Historical program · {p.date}</p>
+      {p.image && (
+        <Image
+          className="program-detail-banner"
+          src={p.image}
+          alt={"Original " + p.title + " community banner"}
+          width={1200}
+          height={750}
+          sizes="(max-width: 820px) 90vw, 820px"
+        />
+      )}
       <h2>Part of the CodeIN story.</h2>
       <p>{p.description}</p>
       {p.url && (

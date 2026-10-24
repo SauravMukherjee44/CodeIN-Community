@@ -1,0 +1,16 @@
+{
+  "sourceTag": "legacy-website-2026-10-24",
+  "sourceCommit": "2e957ad7db868afbb793872cc3439edc5d1e3153",
+  "originalCommits": 928,
+  "contributorBaseline": 150,
+  "firstAuthorDate": "2021-09-28",
+  "lastAuthorDate": "2026-05-19",
+  "commitsByAuthorYear": {
+    "2021": 136,
+    "2022": 759,
+    "2023": 11,
+    "2024": 15,
+    "2025": 3,
+    "2026": 4
+  }
+}

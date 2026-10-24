@@ -11,7 +11,10 @@ for (const name of ["toolkit", "cli"]) {
     cwd: join(root, "packages", name),
     stdio: "inherit",
   });
-  const file = `codein-community-${name}-0.1.0.tgz`;
+  const manifest = JSON.parse(
+    await readFile(join(root, "packages", name, "package.json"), "utf8"),
+  );
+  const file = `codein-community-${name}-${manifest.version}.tgz`;
   const path = join(dest, file);
   const bytes = await readFile(path);
   checks.push(createHash("sha256").update(bytes).digest("hex") + "  " + file);

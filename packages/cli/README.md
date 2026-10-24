@@ -3,7 +3,7 @@
 A bundled ESM command-line toolkit for maintainers. Requires Node.js 24. Download and verify the archive with `checksums.txt` from [GitHub Releases](https://github.com/SauravMukherjee44/CodeIN-Community/releases), then install:
 
 ```sh
-npm install -g ./codein-community-cli-0.1.0.tgz
+npm install -g ./codein-community-cli-0.1.1.tgz
 codein --help
 codein audit ./my-project --format json
 codein audit owner/repo --format markdown

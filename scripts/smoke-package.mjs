@@ -3,6 +3,12 @@ import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import { execFileSync, spawnSync } from "node:child_process";
 import assert from "node:assert/strict";
+const cliVersion = JSON.parse(
+  await readFile("packages/cli/package.json", "utf8"),
+).version;
+const toolkitVersion = JSON.parse(
+  await readFile("packages/toolkit/package.json", "utf8"),
+).version;
 const temp = await mkdtemp(join(tmpdir(), "codein-install-"));
 try {
   execFileSync(
@@ -14,7 +20,7 @@ try {
       "--ignore-scripts",
       "--no-audit",
       "--no-fund",
-      resolve("artifacts/codein-community-cli-0.1.0.tgz"),
+      resolve(`artifacts/codein-community-cli-${cliVersion}.tgz`),
     ],
     { stdio: "inherit" },
   );
@@ -51,7 +57,7 @@ try {
       "--ignore-scripts",
       "--no-audit",
       "--no-fund",
-      resolve("artifacts/codein-community-toolkit-0.1.0.tgz"),
+      resolve(`artifacts/codein-community-toolkit-${toolkitVersion}.tgz`),
     ],
     { stdio: "inherit" },
   );
@@ -62,6 +68,13 @@ try {
     module.auditRepository({ repository: "fixture", files: [] }).summary
       .missing,
     9,
+  );
+  const developer = await import(
+    join(temp, "node_modules/@codein-community/toolkit/dist/developer.js")
+  );
+  assert.equal(
+    developer.formatJson('{"id":9007199254740993}', "compact"),
+    '{"id":9007199254740993}',
   );
   console.log(
     "Installed release archives: CLI commands and ESM library passed.",

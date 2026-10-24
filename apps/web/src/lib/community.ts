@@ -1,3 +1,14 @@
+import type { IconName } from "@/components/icon";
+interface ToolDefinition {
+  group: "developer" | "maintainer";
+  slug: string;
+  number: string;
+  title: string;
+  short: string;
+  description: string;
+  command: string;
+  icon: IconName;
+}
 export const community = {
   name: "CodeIN Community",
   repository: "SauravMukherjee44/CodeIN-Community",
@@ -11,6 +22,7 @@ export const community = {
 };
 export const tools = [
   {
+    group: "maintainer",
     slug: "repository-audit",
     number: "01",
     title: "Repository readiness",
@@ -18,9 +30,10 @@ export const tools = [
     description:
       "See what your repository offers contributors, find the gaps, and leave with a practical checklist.",
     command: "codein audit owner/repo",
-    icon: "↗",
+    icon: "shield",
   },
   {
+    group: "maintainer",
     slug: "contribution-templates",
     number: "02",
     title: "Contribution templates",
@@ -28,9 +41,10 @@ export const tools = [
     description:
       "Create contribution guidance, issue forms, and a PR template that fit how your project works.",
     command: "codein templates --repo owner/repo",
-    icon: "⌘",
+    icon: "file",
   },
   {
+    group: "maintainer",
     slug: "contributor-credits",
     number: "03",
     title: "Contributor credits",
@@ -38,9 +52,78 @@ export const tools = [
     description:
       "Turn your public GitHub contributor history into a shareable, exportable acknowledgement.",
     command: "codein credits owner/repo",
-    icon: "✳",
+    icon: "people",
   },
-];
+] satisfies ToolDefinition[];
+export const developerTools = [
+  {
+    group: "developer",
+    slug: "json-formatter",
+    number: "01",
+    title: "JSON formatter",
+    short: "Make sense of your data.",
+    description:
+      "Validate, format, and minify JSON with readable output and clear syntax errors.",
+    command: "Format · validate · minify",
+    icon: "braces",
+  },
+  {
+    group: "developer",
+    slug: "base64",
+    number: "02",
+    title: "Base64 converter",
+    short: "Text in. Encoded text out.",
+    description:
+      "Encode and decode UTF-8 text, including emoji and multilingual content.",
+    command: "UTF-8 · encode · decode",
+    icon: "code",
+  },
+  {
+    group: "developer",
+    slug: "url-inspector",
+    number: "03",
+    title: "URL & query inspector",
+    short: "Untangle that URL.",
+    description:
+      "Inspect URL components and repeated query parameters, or encode and decode text.",
+    command: "Inspect · encode · decode",
+    icon: "link",
+  },
+] as const satisfies readonly ToolDefinition[];
+export const allTools = [...developerTools, ...tools];
+export type DeveloperToolKind = (typeof developerTools)[number]["slug"];
+export const communityMilestones = [
+  { value: "15,000+", label: "Community members", icon: "people" },
+  { value: "45+", label: "Events hosted", icon: "calendar" },
+  { value: "300+", label: "Opportunities shared", icon: "rocket" },
+] as const;
+export const sponsors = [
+  {
+    name: "GeeksforGeeks",
+    image: "/images/sponsors/geeks.webp",
+    url: "https://www.geeksforgeeks.org/",
+  },
+  {
+    name: "Azure Developer Community",
+    image: "/images/sponsors/azure.webp",
+    url: "https://www.azdev.community/",
+  },
+  {
+    name: "Give My Certificate",
+    image: "/images/sponsors/gmc.webp",
+    url: "https://givemycertificate.com/",
+  },
+  {
+    name: "Newton School",
+    image: "/images/sponsors/newton.png",
+    url: "https://www.newtonschool.co/",
+  },
+  {
+    name: "Coding Minutes",
+    image: "/images/sponsors/coding-minutes.png",
+    url: "https://www.codingminutes.com/",
+  },
+] as const;
 export const events = [
   {
     slug: "full-stack-development",
@@ -79,6 +162,7 @@ export const programs = [
   {
     slug: "100-days-of-code",
     title: "100 Days of Code",
+    image: "/images/programs/100-days-of-code.png",
     date: "Started July 2022",
     description:
       "A community challenge to learn consistently and build in public. Original winners and recognition remain in the source archive.",
@@ -88,6 +172,7 @@ export const programs = [
   {
     slug: "winter-fest",
     title: "Winter Fest 2022",
+    image: "/images/programs/winter-fest.webp",
     date: "February 19, 2022",
     description:
       "A day of sessions and community learning. Revisit the recording and the people who made it possible.",
@@ -97,6 +182,7 @@ export const programs = [
   {
     slug: "spark-a-thon",
     title: "Spark-a-thon",
+    image: "/images/programs/spark-a-thon.webp",
     date: "Historical program",
     description:
       "An augmented-reality hackathon built around learning, experimentation, and community.",
@@ -122,3 +208,8 @@ export const programs = [
     source: "giveaway.html",
   },
 ];
+
+export const featuredPrograms = programs.filter(
+  (program): program is (typeof programs)[number] & { image: string } =>
+    typeof program.image === "string",
+);

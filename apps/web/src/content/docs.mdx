@@ -1,13 +1,23 @@
-## One toolkit. Three ways to build.
+## A workbench for developers and maintainers.
+
+### Everyday developer tools
+
+The [JSON formatter](/tools/json-formatter), [Base64 converter](/tools/base64), and [URL inspector](/tools/url-inspector) run entirely in your browser. Input is not uploaded or saved; copying and downloading are explicit actions.
+
+JSON formatting preserves numeric literals (including large identifiers), key order, duplicate keys, and string escapes. Base64 conversion supports UTF-8 text, including emoji; binary files are not supported. URL inspection preserves repeated query parameters and does not visit the supplied URL. Component encoding uses `encodeURIComponent` / `decodeURIComponent`, so it does not treat a plus sign as a space.
+
+Each tool accepts up to 1,000,000 input characters. Pretty-printed JSON is limited to 100 nested levels and 5,000,000 output characters; use minify for deeper documents.
+
+### Maintainer workflows
 
 Use the browser tools immediately, run the CLI locally, or import the portable TypeScript library into your own project. All three interfaces use the same core engines.
 
 ### Install the CLI
 
-Download `codein-community-cli-0.1.0.tgz` from [GitHub Releases](https://github.com/SauravMukherjee44/CodeIN-Community/releases). Node.js 24 or newer is required.
+Download `codein-community-cli-0.1.1.tgz` from [GitHub Releases](https://github.com/SauravMukherjee44/CodeIN-Community/releases). Node.js 24 or newer is required.
 
 ```sh
-npm install -g ./codein-community-cli-0.1.0.tgz
+npm install -g ./codein-community-cli-0.1.1.tgz
 codein --help
 codein audit ./my-project --format json
 codein credits octocat/Hello-World --format markdown
@@ -34,7 +44,7 @@ GitHub contributors are fetched in pages of 100 and deduplicated by stable GitHu
 
 ### TypeScript library
 
-Install `codein-community-toolkit-0.1.0.tgz` from the same release. ESM and TypeScript declarations are included.
+Install `codein-community-toolkit-0.2.0.tgz` from the same release. ESM and TypeScript declarations are included.
 
 ```ts
 import {

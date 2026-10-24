@@ -10,6 +10,10 @@ export default defineConfig({
   },
   resolve: {
     alias: {
+      "@codein-community/toolkit/developer": new URL(
+        "./packages/toolkit/src/developer.ts",
+        import.meta.url,
+      ).pathname,
       "@codein-community/toolkit/github": new URL(
         "./packages/toolkit/src/github.ts",
         import.meta.url,

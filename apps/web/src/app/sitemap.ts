@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { tools, programs, community } from "@/lib/community";
+import { allTools, programs, community } from "@/lib/community";
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     "",
@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       "contact",
       "privacy",
     ],
-    ...tools.map((t) => "tools/" + t.slug),
+    ...allTools.map((t) => "tools/" + t.slug),
     ...programs.map((p) => "events/" + p.slug),
   ].map((path) => ({ url: community.site + "/" + path }));
 }

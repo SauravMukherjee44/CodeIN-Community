@@ -22,6 +22,8 @@ Use the existing Netlify project. Never replace the live site with a static expo
 
 ## Rollback
 
+The validated v1.0 production deployment is **`6adcfc2e4c14db17a2a5c634`**. Retain it as the immediate rollback target for the v1.1 UI and developer tools release. Record the currently published successful deploy before every later cutover.
+
 The last successful pre-migration production deployment is **`6a0bdb4cfc013000080fb312`**. Keep it available in Netlify's deployment history. In the existing site's Deploys view, select that deploy and use **Publish deploy** (restore a previous deploy). This restores the original published files without deleting new code or rewriting Git history. Pause automatic publishing if a newer failing build would otherwise replace the rollback.
 
 The immutable source baseline is Git tag `legacy-website-2026-10-24`, commit `2e957ad7db868afbb793872cc3439edc5d1e3153`. The archive includes all 406 tracked files and license notices; hashes are in `legacy/manifest.json`.
