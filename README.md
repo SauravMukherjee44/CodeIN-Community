@@ -23,6 +23,18 @@
   <a href="https://github.com/SauravMukherjee44/CodeIN-Community/commits/main/"><img src="https://img.shields.io/badge/building_together-since_2021-e7af00" alt="Building together since 2021" /></a>
 </p>
 
+## Building together since 2021
+
+**928 original commits · 150 credited contributors · Original authors and dates preserved**
+
+| September 2021                                                                                                                    | January 31, 2022                                                                                                               | Original website                                                                                                               |
+| --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| [View our founding commit](https://github.com/SauravMukherjee44/CodeIN-Community/commit/8600a7c8943d7a36e9fba696953ecd8aeacb34b2) | [View community PR #87](https://github.com/SauravMukherjee44/CodeIN-Community/commit/55f5bb3976d1c32a4b02475164cedef375eef6e3) | [Browse the source before modernization](https://github.com/SauravMukherjee44/CodeIN-Community/tree/legacy-website-2026-10-24) |
+
+[![Original contributions from 2021 onward](docs/images/repository-history.svg)](https://github.com/SauravMukherjee44/CodeIN-Community/commits/legacy-website-2026-10-24/)
+
+This is the original repository, continuing under a new name. GitHub’s file list shows each path’s latest change, including the recent migration; the older commits remain in its ancestry. [Meet our contributors](https://codeincommunity.com/contributors) · [Explore our heritage](https://codeincommunity.com/heritage) · [Original commit history](https://github.com/SauravMukherjee44/CodeIN-Community/commits/legacy-website-2026-10-24/)
+
 ## A community with real impact
 
 | Community members | Events hosted | Opportunities shared | GitHub contributors credited |
@@ -52,6 +64,8 @@ All three developer utilities run locally in the browser. No accounts, uploads, 
 | [URL & query inspector](https://codeincommunity.com/tools/url-inspector) | Inspect URL components and repeated query keys, or encode and decode a component without visiting the URL.  |
 
 [![CodeIN developer workbench](docs/images/developer-tools.png)](https://codeincommunity.com/tools)
+
+Have an idea for another utility? [Submit your own tool](https://github.com/SauravMukherjee44/CodeIN-Community/issues/new?template=tool.yml). Describe the requirements in the guided GitHub form, publish the issue, and coordinate implementation with maintainers. GitHub sign-in is required; proposals are public.
 
 ## Tools for open-source maintainers
 

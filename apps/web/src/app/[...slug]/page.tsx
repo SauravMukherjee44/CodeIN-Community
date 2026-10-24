@@ -1,3 +1,4 @@
+import { ToolProposal } from "@/components/tool-proposal";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -140,6 +141,7 @@ export default async function Page({
               </div>
               <ToolCards group="maintainer" />
             </section>
+            <ToolProposal />
             <div className="info-grid subsection">
               <article className="info-card">
                 <h2>Yours to use. Yours to improve.</h2>
@@ -349,6 +351,49 @@ export default async function Page({
               verification. The full Git history remains in this same
               repository.
             </div>
+            <section
+              className="subsection"
+              aria-labelledby="original-commits-title"
+            >
+              <h2 id="original-commits-title">
+                Our first chapters, in the original commits.
+              </h2>
+              <p>
+                928 commits before modernization, with the original authors and
+                dates.
+              </p>
+              <div className="info-grid">
+                <article className="info-card">
+                  <h3>September 2021 · The beginning</h3>
+                  <p>The founding commit of this same repository.</p>
+                  <a
+                    className="text-link"
+                    href={
+                      community.repositoryUrl +
+                      "/commit/8600a7c8943d7a36e9fba696953ecd8aeacb34b2"
+                    }
+                  >
+                    View the 2021 founding commit ↗
+                  </a>
+                </article>
+                <article className="info-card">
+                  <h3>January 31, 2022 · Building together</h3>
+                  <p>
+                    Community PR #87 brought the benefits page into the original
+                    website.
+                  </p>
+                  <a
+                    className="text-link"
+                    href={
+                      community.repositoryUrl +
+                      "/commit/55f5bb3976d1c32a4b02475164cedef375eef6e3"
+                    }
+                  >
+                    View the 2022 contribution ↗
+                  </a>
+                </article>
+              </div>
+            </section>
             <Image
               className="heritage-screenshot"
               src="/images/heritage.png"

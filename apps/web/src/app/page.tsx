@@ -1,3 +1,4 @@
+import { ToolProposal } from "@/components/tool-proposal";
 import { Icon } from "@/components/icon";
 import Link from "next/link";
 import Image from "next/image";
@@ -166,6 +167,7 @@ export default function Home() {
             link={{ href: "/tools", label: "Open the workbench" }}
           />
           <ToolCards group="developer" />
+          <ToolProposal />
           <div className="tool-footnote">
             <span className="status-dot" /> Developer tools run locally in your
             browser.

@@ -13,6 +13,8 @@ export const community = {
   name: "CodeIN Community",
   repository: "SauravMukherjee44/CodeIN-Community",
   repositoryUrl: "https://github.com/SauravMukherjee44/CodeIN-Community",
+  toolProposalUrl:
+    "https://github.com/SauravMukherjee44/CodeIN-Community/issues/new?template=tool.yml",
   site: "https://codeincommunity.com",
   discord: "https://discord.com/invite/sqFRzrj7f3",
   telegram: "https://t.me/CodeINCommunity",

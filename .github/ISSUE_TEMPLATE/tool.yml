@@ -1,0 +1,51 @@
+name: Community tool proposal
+description: Propose a developer tool and coordinate its implementation
+title: "[Tool] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Share a focused tool idea for CodeIN Community. This creates a public issue; do not include secrets or private data. Search existing issues first. A maintainer will discuss scope before implementation; submitting does not automatically assign the issue or guarantee inclusion.
+  - type: input
+    id: tool-name
+    attributes:
+      label: Tool name
+      placeholder: e.g. Markdown table formatter
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Who needs this and what problem does it solve?
+      description: Describe the current workflow and why existing tools do not cover it.
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements and examples
+      description: Describe inputs, expected outputs, validation, and important edge cases. Use sample data that is safe to share publicly.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What observable behavior and tests would show the tool is complete? Include accessibility and mobile behavior where relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Proposed implementation and scope
+      description: Optional. Suggest browser, library, or CLI support, dependencies, privacy considerations, and what is out of scope.
+  - type: dropdown
+    id: participation
+    attributes:
+      label: How would you like to help?
+      options:
+        - I would like to implement this after scope is agreed
+        - I can help test or review
+        - I am sharing an idea for others to build
+    validations:
+      required: true
